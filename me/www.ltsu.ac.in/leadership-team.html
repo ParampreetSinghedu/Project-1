@@ -1,0 +1,2142 @@
+<!-- DEBUG-VIEW START 1 APPPATH/Views/frontend/leadership-team.php -->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from www.ltsu.ac.in/leadership-team by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2026 13:40:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript" nonce="e459c90ae2e85e5cbdb27623" id="debugbar_loader" data-time="1782739880.183934" src="index0880.html?debugbar"></script><script type="text/javascript" nonce="e459c90ae2e85e5cbdb27623" id="debugbar_dynamic_script"></script><style type="text/css" nonce="bea8f2436ee1602f1ced1df5" id="debugbar_dynamic_style"></style><script class="kint-rich-script" nonce="e459c90ae2e85e5cbdb27623">void 0===window.kintShared&&(window.kintShared=function(){"use strict";var e={dedupe:function(e,n){return[].forEach.call(document.querySelectorAll(e),function(e){e!==(n=!n||!n.ownerDocument.contains(n)?e:n)&&e.parentNode.removeChild(e)}),n},runOnce:function(e){"complete"===document.readyState?e():window.addEventListener("load",e)}};return window.addEventListener("click",function(e){var n;e.target.classList.contains("kint-ide-link")&&((n=new XMLHttpRequest).open("../ltsu.ac.in/GET.html",e.target.href),n.send(null),e.preventDefault())}),e}());
+void 0===window.kintRich&&(window.kintRich=function(){"use strict";var l={selectText:function(e){var t=window.getSelection(),a=document.createRange();a.selectNodeContents(e),t.removeAllRanges(),t.addRange(a)},toggle:function(e,t){var a=l.getChildren(e);a&&(e.classList.toggle("kint-show",t),1===a.childNodes.length&&(a=a.childNodes[0].childNodes[0])&&a.classList&&a.classList.contains("kint-parent")&&l.toggle(a,t))},toggleChildren:function(e,t){var a=l.getChildren(e);if(a){var o=a.getElementsByClassName("kint-parent"),n=o.length;for(void 0===t&&(t=e.classList.contains("kint-show"));n--;)l.toggle(o[n],t)}},switchTab:function(e){var t=e.previousSibling,a=0;for(e.parentNode.getElementsByClassName("kint-active-tab")[0].classList.remove("kint-active-tab"),e.classList.add("kint-active-tab");t;)1===t.nodeType&&a++,t=t.previousSibling;for(var o=e.parentNode.nextSibling.childNodes,n=0;n<o.length;n++)n===a?(o[n].classList.add("kint-show"),1===o[n].childNodes.length&&(t=o[n].childNodes[0].childNodes[0])&&t.classList&&t.classList.contains("kint-parent")&&l.toggle(t,!0)):o[n].classList.remove("kint-show")},mktag:function(e){return"<"+e+">"},openInNewWindow:function(e){var t=window.open();t&&(t.document.open(),t.document.write(l.mktag("html")+l.mktag("head")+l.mktag("title")+"Kint ("+(new Date).toISOString()+")"+l.mktag("/title")+l.mktag('meta charset="utf-8"')+l.mktag('script class="kint-rich-script" nonce="'+l.script.nonce+'"')+l.script.innerHTML+l.mktag("/script")+l.mktag('style class="kint-rich-style" nonce="'+l.style.nonce+'"')+l.style.innerHTML+l.mktag("/style")+l.mktag("/head")+l.mktag("body")+'<input class="kint-note-input" placeholder="Take some notes!"><div class="kint-rich">'+e.parentNode.outerHTML+"</div>"+l.mktag("/body")),t.document.close())},sortTable:function(e,a){var t=e.tBodies[0];[].slice.call(e.tBodies[0].rows).sort(function(e,t){if(e=e.cells[a].textContent.trim().toLocaleLowerCase(),t=t.cells[a].textContent.trim().toLocaleLowerCase(),isNaN(e)||isNaN(t)){if(isNaN(e)&&!isNaN(t))return 1;if(isNaN(t)&&!isNaN(e))return-1}else e=parseFloat(e),t=parseFloat(t);return e<t?-1:t<e?1:0}).forEach(function(e){t.appendChild(e)})},showAccessPath:function(e){for(var t=e.childNodes,a=0;a<t.length;a++)if(t[a].classList&&t[a].classList.contains("access-path"))return t[a].classList.toggle("kint-show"),void(t[a].classList.contains("kint-show")&&l.selectText(t[a]))},showSearchBox:function(e){var t=e.querySelector(".kint-search");t&&(t.classList.toggle("kint-show"),t.classList.contains("kint-show")?(e.classList.add("kint-show"),t.focus(),t.select(),l.search(e.parentNode,t.value)):e.parentNode.classList.remove("kint-search-root"))},search:function(e,t){e.querySelectorAll(".kint-search-match").forEach(function(e){e.classList.remove("kint-search-match")}),e.classList.remove("kint-search-match"),e.classList.toggle("kint-search-root",t.length),t.length&&l.findMatches(e,t)},findMatches:function(e,t){var a,o,n,r=e.cloneNode(!0);if(r.querySelectorAll(".access-path").forEach(function(e){e.remove()}),-1!=r.textContent.toUpperCase().indexOf(t.toUpperCase())){for(s in e.classList.add("kint-search-match"),e.childNodes)if("DD"==e.childNodes[s].tagName){a=e.childNodes[s];break}if(a)if([].forEach.call(a.childNodes,function(e){"DL"==e.tagName?l.findMatches(e,t):"UL"==e.tagName&&(e.classList.contains("kint-tabs")?o=e.childNodes:e.classList.contains("kint-tab-contents")&&(n=e.childNodes))}),o&&n&&o.length==n.length)for(var s=0;s<o.length;s++){var i=!1;-1!=o[s].textContent.toUpperCase().indexOf(t.toUpperCase())?i=!0:((r=n[s].cloneNode(!0)).querySelectorAll(".access-path").forEach(function(e){e.remove()}),-1!=r.textContent.toUpperCase().indexOf(t.toUpperCase())&&(i=!0)),i&&(o[s].classList.add("kint-search-match"),[].forEach.call(n[s].childNodes,function(e){"DL"==e.tagName&&l.findMatches(e,t)}))}}},getParentByClass:function(e,t){for(;(e=e.parentNode)&&e.classList&&!e.classList.contains(t););return e},getParentHeader:function(e,t){for(var a=e.nodeName.toLowerCase();"dd"!==a&&"dt"!==a&&l.getParentByClass(e,"kint-rich");)a=(e=e.parentNode).nodeName.toLowerCase();return l.getParentByClass(e,"kint-rich")?(e="dd"===a&&t?e.previousElementSibling:e)&&"dt"===e.nodeName.toLowerCase()&&e.classList.contains("kint-parent")?e:void 0:null},getChildren:function(e){for(;(e=e.nextElementSibling)&&"dd"!==e.nodeName.toLowerCase(););return e},isFolderOpen:function(){if(l.folder&&l.folder.querySelector("dd.kint-foldout"))return l.folder.querySelector("dd.kint-foldout").previousSibling.classList.contains("kint-show")},initLoad:function(){l.style=window.kintShared.dedupe("style.kint-rich-style",l.style),l.script=window.kintShared.dedupe("script.kint-rich-script",l.script),l.folder=window.kintShared.dedupe(".kint-rich.kint-folder",l.folder);var t,e=document.querySelectorAll("input.kint-search");[].forEach.call(e,function(t){function e(e){window.clearTimeout(a),t.value!==o&&(a=window.setTimeout(function(){o=t.value,l.search(t.parentNode.parentNode,o)},500))}var a=null,o=null;t.removeEventListener("keyup",e),t.addEventListener("keyup",e)}),l.folder&&(t=l.folder.querySelector("dd"),[].forEach.call(document.querySelectorAll(".kint-rich.kint-file"),function(e){e.parentNode!==l.folder&&t.appendChild(e)}),document.body.appendChild(l.folder),l.folder.classList.add("kint-show"))},keyboardNav:{targets:[],target:0,active:!1,fetchTargets:function(){var e=l.keyboardNav.targets[l.keyboardNav.target];l.keyboardNav.targets=[],document.querySelectorAll(".kint-rich nav, .kint-tabs>li:not(.kint-active-tab)").forEach(function(e){l.isFolderOpen()&&!l.folder.contains(e)||0===e.offsetWidth&&0===e.offsetHeight||l.keyboardNav.targets.push(e)}),e&&-1!==l.keyboardNav.targets.indexOf(e)&&(l.keyboardNav.target=l.keyboardNav.targets.indexOf(e))},sync:function(e){var t=document.querySelector(".kint-focused");t&&t.classList.remove("kint-focused"),l.keyboardNav.active&&((t=l.keyboardNav.targets[l.keyboardNav.target]).classList.add("kint-focused"),e||l.keyboardNav.scroll(t))},scroll:function(e){var t,a;e!==l.folder.querySelector("dt > nav")&&(a=(t=function(e){return e.offsetTop+(e.offsetParent?t(e.offsetParent):0)})(e),l.isFolderOpen()?(e=l.folder.querySelector("dd.kint-foldout")).scrollTo(0,a-e.clientHeight/2):window.scrollTo(0,a-window.innerHeight/2))},moveCursor:function(e){for(l.keyboardNav.target+=e;l.keyboardNav.target<0;)l.keyboardNav.target+=l.keyboardNav.targets.length;for(;l.keyboardNav.target>=l.keyboardNav.targets.length;)l.keyboardNav.target-=l.keyboardNav.targets.length;l.keyboardNav.sync()},setCursor:function(e){if(l.isFolderOpen()&&!l.folder.contains(e))return!1;l.keyboardNav.fetchTargets();for(var t=0;t<l.keyboardNav.targets.length;t++)if(e===l.keyboardNav.targets[t])return l.keyboardNav.target=t,!0;return!1}},mouseNav:{lastClickTarget:null,lastClickTimer:null,lastClickCount:0,renewLastClick:function(){window.clearTimeout(l.mouseNav.lastClickTimer),l.mouseNav.lastClickTimer=window.setTimeout(function(){l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickTimer=null,l.mouseNav.lastClickCount=0},250)}},style:null,script:null,folder:null};return window.addEventListener("click",function(e){var t=e.target;if(l.mouseNav.lastClickTarget&&l.mouseNav.lastClickTimer&&l.mouseNav.lastClickCount)if(t=l.mouseNav.lastClickTarget,1===l.mouseNav.lastClickCount)l.toggleChildren(t.parentNode),l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),l.mouseNav.lastClickCount++,l.mouseNav.renewLastClick();else{for(var a=t.parentNode.classList.contains("kint-show"),o=document.getElementsByClassName("kint-parent"),n=o.length;n--;)l.toggle(o[n],a);l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),l.keyboardNav.scroll(t),window.clearTimeout(l.mouseNav.lastClickTimer),l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickCount=0}else if(l.getParentByClass(t,"kint-rich")){var r=t.nodeName.toLowerCase();if("dfn"===r&&l.selectText(t),"th"!==r)if((t=l.getParentHeader(t))&&(l.keyboardNav.setCursor(t.querySelector("nav")),l.keyboardNav.sync(!0)),t=e.target,"li"===r&&"kint-tabs"===t.parentNode.className)"kint-active-tab"!==t.className&&l.switchTab(t),(t=l.getParentHeader(t,!0))&&(l.keyboardNav.setCursor(t.querySelector("nav")),l.keyboardNav.sync(!0));else if("nav"===r)"footer"===t.parentNode.nodeName.toLowerCase()?(l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),(t=t.parentNode).classList.toggle("kint-show")):(l.toggle(t.parentNode),l.keyboardNav.fetchTargets(),l.mouseNav.lastClickCount=1,l.mouseNav.lastClickTarget=t,l.mouseNav.renewLastClick());else if(t.classList.contains("kint-popup-trigger")){var s=t.parentNode;if("footer"===s.nodeName.toLowerCase())s=s.previousSibling;else for(;s&&!s.classList.contains("kint-parent");)s=s.parentNode;l.openInNewWindow(s)}else t.classList.contains("kint-access-path-trigger")?l.showAccessPath(t.parentNode):t.classList.contains("kint-search-trigger")?l.showSearchBox(t.parentNode):t.classList.contains("kint-search")||("pre"===r&&3===e.detail?l.selectText(t):l.getParentByClass(t,"kint-source")&&3===e.detail?l.selectText(l.getParentByClass(t,"kint-source")):t.classList.contains("access-path")?l.selectText(t):"a"!==r&&(t=l.getParentHeader(t))&&(l.toggle(t),l.keyboardNav.fetchTargets()));else e.ctrlKey||l.sortTable(t.parentNode.parentNode.parentNode,t.cellIndex)}},!0),window.addEventListener("keydown",function(e){if(e.target===document.body&&!e.altKey&&!e.ctrlKey){if(68===e.keyCode){if(l.keyboardNav.active)l.keyboardNav.active=!1;else if(l.keyboardNav.active=!0,l.keyboardNav.fetchTargets(),0===l.keyboardNav.targets.length)return void(l.keyboardNav.active=!1);return l.keyboardNav.sync(),void e.preventDefault()}if(l.keyboardNav.active){if(9===e.keyCode)return l.keyboardNav.moveCursor(e.shiftKey?-1:1),void e.preventDefault();if(38===e.keyCode||75===e.keyCode)return l.keyboardNav.moveCursor(-1),void e.preventDefault();if(40===e.keyCode||74===e.keyCode)return l.keyboardNav.moveCursor(1),void e.preventDefault();var t,a,o=l.keyboardNav.targets[l.keyboardNav.target];if("li"===o.nodeName.toLowerCase()){if(32===e.keyCode||13===e.keyCode)return l.switchTab(o),l.keyboardNav.fetchTargets(),l.keyboardNav.sync(),void e.preventDefault();if(39===e.keyCode||76===e.keyCode)return l.keyboardNav.moveCursor(1),void e.preventDefault();if(37===e.keyCode||72===e.keyCode)return l.keyboardNav.moveCursor(-1),void e.preventDefault()}o=o.parentNode,65===e.keyCode?(l.showAccessPath(o),e.preventDefault()):"footer"===o.nodeName.toLowerCase()&&o.parentNode.classList.contains("kint-rich")?32===e.keyCode||13===e.keyCode?(o.classList.toggle("kint-show"),e.preventDefault()):37===e.keyCode||72===e.keyCode?(o.classList.remove("kint-show"),e.preventDefault()):39!==e.keyCode&&76!==e.keyCode||(o.classList.add("kint-show"),e.preventDefault()):32===e.keyCode||13===e.keyCode?(l.toggle(o),l.keyboardNav.fetchTargets(),e.preventDefault()):39!==e.keyCode&&76!==e.keyCode&&37!==e.keyCode&&72!==e.keyCode||(t=39===e.keyCode||76===e.keyCode,o.classList.contains("kint-show")?l.toggleChildren(o,t):t||(a=l.getParentHeader(o.parentNode.parentNode,!0))&&(l.keyboardNav.setCursor((o=a).querySelector("nav")),l.keyboardNav.sync()),l.toggle(o,t),l.keyboardNav.fetchTargets(),e.preventDefault())}}},!0),l}()),window.kintShared.runOnce(window.kintRich.initLoad);
+void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,window.addEventListener("load",function(){"use strict";var a={},t=Array.prototype.slice.call(document.querySelectorAll("[data-kint-microtime-group]"),0);t.forEach(function(t){var i,e;t.querySelector(".kint-microtime-lap")&&(i=t.getAttribute("data-kint-microtime-group"),e=parseFloat(t.querySelector(".kint-microtime-lap").innerHTML),t=parseFloat(t.querySelector(".kint-microtime-avg").innerHTML),void 0===a[i]&&(a[i]={}),(void 0===a[i].min||a[i].min>e)&&(a[i].min=e),(void 0===a[i].max||a[i].max<e)&&(a[i].max=e),a[i].avg=t)}),t.forEach(function(t){var i,e,r,o,n=t.querySelector(".kint-microtime-lap");null!==n&&(i=parseFloat(n.textContent),o=t.dataset.kintMicrotimeGroup,e=a[o].avg,r=a[o].max,o=a[o].min,i===(t.querySelector(".kint-microtime-avg").textContent=e)&&i===o&&i===r||(n.style.background=e<i?"hsl("+(40-40*((i-e)/(r-e)))+", 100%, 65%)":"hsl("+(40+80*(e===o?0:(e-i)/(e-o)))+", 100%, 65%)"))})}));
+</script><style class="kint-rich-style" nonce="bea8f2436ee1602f1ced1df5">.kint-rich{font-size:13px;overflow-x:auto;white-space:nowrap;background:rgba(255,255,255,0.9)}.kint-rich.kint-folder{position:fixed;bottom:0;left:0;right:0;z-index:999999;width:100%;margin:0;display:block}.kint-rich.kint-folder dd.kint-foldout{max-height:calc(100vh - 100px);padding-right:8px;overflow-y:scroll;display:none}.kint-rich.kint-folder dd.kint-foldout.kint-show{display:block}.kint-rich::selection,.kint-rich::-moz-selection,.kint-rich::-webkit-selection{background:#aaa;color:#1d1e1e}.kint-rich .kint-focused{box-shadow:0 0 3px 2px red}.kint-rich,.kint-rich::before,.kint-rich::after,.kint-rich *,.kint-rich *::before,.kint-rich *::after{box-sizing:border-box;border-radius:0;color:#1d1e1e;float:none !important;font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;line-height:15px;margin:0;padding:0;text-align:left}.kint-rich{margin:8px 0}.kint-rich dt,.kint-rich dl{width:auto}.kint-rich dt,.kint-rich div.access-path{background:#f8f8f8;border:1px solid #d7d7d7;color:#1d1e1e;display:block;font-weight:bold;list-style:none outside none;overflow:auto;padding:4px}.kint-rich dt:hover,.kint-rich div.access-path:hover{border-color:#aaa}.kint-rich>dl dl{padding:0 0 0 12px}.kint-rich dt.kint-parent>nav,.kint-rich>footer>nav{background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAxNTAiPjxwYXRoIGQ9Ik02IDdoMThsLTkgMTV6bTAgMzBoMThsLTkgMTV6bTAgNDVoMThsLTktMTV6bTAgMzBoMThsLTktMTV6bTAgMTJsMTggMThtLTE4IDBsMTgtMTgiIGZpbGw9IiM1NTUiLz48cGF0aCBkPSJNNiAxMjZsMTggMThtLTE4IDBsMTgtMTgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjNTU1Ii8+PC9zdmc+") no-repeat scroll 0 0/15px 75px transparent;cursor:pointer;display:inline-block;height:15px;width:15px;margin-right:3px;vertical-align:middle}.kint-rich dt.kint-parent:hover>nav,.kint-rich>footer>nav:hover{background-position:0 25%}.kint-rich dt.kint-parent.kint-show>nav,.kint-rich>footer.kint-show>nav{background-position:0 50%}.kint-rich dt.kint-parent.kint-show:hover>nav,.kint-rich>footer.kint-show>nav:hover{background-position:0 75%}.kint-rich dt.kint-parent.kint-locked>nav{background-position:0 100%}.kint-rich dt.kint-parent+dd{display:none;border-left:1px dashed #d7d7d7}.kint-rich dt.kint-parent.kint-show+dd{display:block}.kint-rich var,.kint-rich var a{color:#06f;font-style:normal}.kint-rich dt:hover var,.kint-rich dt:hover var a{color:red}.kint-rich dfn{font-style:normal;font-family:monospace;color:#1d1e1e}.kint-rich pre{color:#1d1e1e;margin:0 0 0 12px;padding:5px;overflow-y:hidden;border-top:0;border:1px solid #d7d7d7;background:#f8f8f8;display:block;word-break:normal}.kint-rich .kint-popup-trigger,.kint-rich .kint-access-path-trigger,.kint-rich .kint-search-trigger{background:rgba(29,30,30,0.8);border-radius:3px;height:16px;font-size:16px;margin-left:5px;font-weight:bold;width:16px;text-align:center;float:right !important;cursor:pointer;color:#f8f8f8;position:relative;overflow:hidden;line-height:17.6px}.kint-rich .kint-popup-trigger:hover,.kint-rich .kint-access-path-trigger:hover,.kint-rich .kint-search-trigger:hover{color:#1d1e1e;background:#f8f8f8}.kint-rich dt.kint-parent>.kint-popup-trigger{line-height:19.2px}.kint-rich .kint-search-trigger{font-size:20px}.kint-rich input.kint-search{display:none;border:1px solid #d7d7d7;border-top-width:0;border-bottom-width:0;padding:4px;float:right !important;margin:-4px 0;color:#1d1e1e;background:#f8f8f8;height:24px;width:160px;position:relative;z-index:100}.kint-rich input.kint-search.kint-show{display:block}.kint-rich .kint-search-root ul.kint-tabs>li:not(.kint-search-match){background:#f8f8f8;opacity:0.5}.kint-rich .kint-search-root dl:not(.kint-search-match){opacity:0.5}.kint-rich .kint-search-root dl:not(.kint-search-match)>dt{background:#f8f8f8}.kint-rich .kint-search-root dl:not(.kint-search-match) dl,.kint-rich .kint-search-root dl:not(.kint-search-match) ul.kint-tabs>li:not(.kint-search-match){opacity:1}.kint-rich div.access-path{background:#f8f8f8;display:none;margin-top:5px;padding:4px;white-space:pre}.kint-rich div.access-path.kint-show{display:block}.kint-rich footer{padding:0 3px 3px;font-size:9px;background:transparent}.kint-rich footer>.kint-popup-trigger{background:transparent;color:#1d1e1e}.kint-rich footer nav{height:10px;width:10px;background-size:10px 50px}.kint-rich footer>ol{display:none;margin-left:32px}.kint-rich footer.kint-show>ol{display:block}.kint-rich a{color:#1d1e1e;text-shadow:none;text-decoration:underline}.kint-rich a:hover{color:#1d1e1e;border-bottom:1px dotted #1d1e1e}.kint-rich ul{list-style:none;padding-left:12px}.kint-rich ul:not(.kint-tabs) li{border-left:1px dashed #d7d7d7}.kint-rich ul:not(.kint-tabs) li>dl{border-left:none}.kint-rich ul.kint-tabs{margin:0 0 0 12px;padding-left:0;background:#f8f8f8;border:1px solid #d7d7d7;border-top:0}.kint-rich ul.kint-tabs>li{background:#f8f8f8;border:1px solid #d7d7d7;cursor:pointer;display:inline-block;height:24px;margin:2px;padding:0 12px;vertical-align:top}.kint-rich ul.kint-tabs>li:hover,.kint-rich ul.kint-tabs>li.kint-active-tab:hover{border-color:#aaa;color:red}.kint-rich ul.kint-tabs>li.kint-active-tab{background:#f8f8f8;border-top:0;margin-top:-1px;height:27px;line-height:24px}.kint-rich ul.kint-tabs>li:not(.kint-active-tab){line-height:20px}.kint-rich ul.kint-tabs li+li{margin-left:0}.kint-rich ul.kint-tab-contents>li{display:none}.kint-rich ul.kint-tab-contents>li.kint-show{display:block}.kint-rich dt:hover+dd>ul>li.kint-active-tab{border-color:#aaa;color:red}.kint-rich dt>.kint-color-preview{width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:10px;border:1px solid #d7d7d7;background-color:#ccc;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="%23FFF" d="M0 0h1v2h1V1H0z"/></svg>');background-size:100%}.kint-rich dt>.kint-color-preview:hover{border-color:#aaa}.kint-rich dt>.kint-color-preview>div{width:100%;height:100%}.kint-rich table{border-collapse:collapse;empty-cells:show;border-spacing:0}.kint-rich table *{font-size:12px}.kint-rich table dt{background:none;padding:2px}.kint-rich table dt .kint-parent{min-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kint-rich table td,.kint-rich table th{border:1px solid #d7d7d7;padding:2px;vertical-align:center}.kint-rich table th{cursor:alias}.kint-rich table td:first-child,.kint-rich table th{font-weight:bold;background:#f8f8f8;color:#1d1e1e}.kint-rich table td{background:#f8f8f8;white-space:pre}.kint-rich table td>dl{padding:0}.kint-rich table pre{border-top:0;border-right:0}.kint-rich table thead th:first-child{background:none;border:0}.kint-rich table tr:hover>td{box-shadow:0 0 1px 0 #aaa inset}.kint-rich table tr:hover var{color:red}.kint-rich table ul.kint-tabs li.kint-active-tab{height:20px;line-height:17px}.kint-rich pre.kint-source{margin-left:-1px}.kint-rich pre.kint-source[data-kint-filename]:before{display:block;content:attr(data-kint-filename);margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid #f8f8f8}.kint-rich pre.kint-source>div:before{display:inline-block;content:counter(kint-l);counter-increment:kint-l;border-right:1px solid #aaa;padding-right:8px;margin-right:8px}.kint-rich pre.kint-source>div.kint-highlight{background:#f8f8f8}.kint-rich .kint-microtime-lap{text-shadow:-1px 0 #aaa,0 1px #aaa,1px 0 #aaa,0 -1px #aaa;color:#f8f8f8;font-weight:bold}input.kint-note-input{width:100%}.kint-rich .kint-focused{box-shadow:0 0 3px 2px red}.kint-rich dt{font-weight:normal}.kint-rich dt.kint-parent{margin-top:4px}.kint-rich dl dl{margin-top:4px;padding-left:25px;border-left:none}.kint-rich>dl>dt{background:#f8f8f8}.kint-rich ul{margin:0;padding-left:0}.kint-rich ul:not(.kint-tabs)>li{border-left:0}.kint-rich ul.kint-tabs{background:#f8f8f8;border:1px solid #d7d7d7;border-width:0 1px 1px 1px;padding:4px 0 0 12px;margin-left:-1px;margin-top:-1px}.kint-rich ul.kint-tabs li,.kint-rich ul.kint-tabs li+li{margin:0 0 0 4px}.kint-rich ul.kint-tabs li{border-bottom-width:0;height:25px}.kint-rich ul.kint-tabs li:first-child{margin-left:0}.kint-rich ul.kint-tabs li.kint-active-tab{border-top:1px solid #d7d7d7;background:#fff;font-weight:bold;padding-top:0;border-bottom:1px solid #fff !important;margin-bottom:-1px}.kint-rich ul.kint-tabs li.kint-active-tab:hover{border-bottom:1px solid #fff}.kint-rich ul>li>pre{border:1px solid #d7d7d7}.kint-rich dt:hover+dd>ul{border-color:#aaa}.kint-rich pre{background:#fff;margin-top:4px;margin-left:25px}.kint-rich .kint-source{margin-left:-1px}.kint-rich .kint-source .kint-highlight{background:#cfc}.kint-rich .kint-parent.kint-show>.kint-search{border-bottom-width:1px}.kint-rich table td{background:#fff}.kint-rich table td>dl{padding:0;margin:0}.kint-rich table td>dl>dt.kint-parent{margin:0}.kint-rich table td:first-child,.kint-rich table td,.kint-rich table th{padding:2px 4px}.kint-rich table dd,.kint-rich table dt{background:#fff}.kint-rich table tr:hover>td{box-shadow:none;background:#cfc}
+</style>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/frontend/css/meanmenu.css">
+<link rel="stylesheet" href="assets/frontend/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/frontend/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/frontend/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/frontend/css/flaticon.css">
+<link rel="stylesheet" href="assets/frontend/css/remixicon.css">
+<link rel="stylesheet" href="assets/frontend/css/odometer.min.css">
+<link rel="stylesheet" href="assets/frontend/css/aos.css">
+<link rel="stylesheet" href="assets/frontend/css/style.css">
+<link rel="stylesheet" href="assets/frontend/css/dark.css">
+<link rel="stylesheet" href="assets/frontend/css/responsive.css">
+<link rel="icon" type="image/png" href="assets/frontend/images/favicon.png">
+<title>
+Leadership Team</title>
+<link rel="stylesheet" type="text/css" href="assets/frontend/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../fonts.googleapis.com/css28049.html?family=Sabon+Next:wght@700&amp;display=swap">
+
+<style>
+@import url('../fonts.googleapis.com/css259a1.css?family=Roboto+Slab:wght@100..900&amp;display=swap');
+</style>
+
+<style type="text/css">
+
+  .why1.text-center {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 8px;
+    margin-bottom: 23px;
+    background-color: white;
+}
+</style>
+<style type="text/css">
+.page-banner-area::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+     background: rgb(8 32 65 / 0%); 
+}
+
+.custom_section1{background-color: #194697; padding-top:40px; padding-bottom:50px;}
+.custom_section1 .headsec{margin-bottom:20px; border-bottom:1px dashed #fff;}
+.custom_section1 .headsec h2{font-size:20px;text-align:center; color:#fff;  font-family:'Roboto Slab', serif;}
+.custom_section1 .headsec p{font-size:14px; text-align:center; color:#fff; padding-bottom:15px;  font-family:'Roboto Slab', serif;}
+.custom_section1 .colbox{    background-color: #FFFFFF;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;border-radius: 5px 5px 5px 5px;border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #00AEEF;  font-family:'Roboto Slab', serif; padding:10px; margin-bottom:25px;}
+	.custom_section1 .colbox ul li{margin-bottom:10px;color: #25408D;}
+	
+	
+.custom_section2{background-color:#fff; padding-top:40px; padding-bottom:50px;}
+.custom_section2 .cardhead{margin-bottom:20px; background-color: #00AEEF; padding:20px; text-align:center;}
+.custom_section2 .cardhead i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+.custom_section2 .cardhead h4 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    font-size: 21px;
+}
+
+
+.custom_section2 .colbox{  background-color: #FFFFFF;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;border-radius: 5px 5px 5px 5px;border-style: solid;
+    border-width: 0px 0px 7px 0px;
+    border-color: #00AEEF;  font-family:'Roboto Slab', serif; margin-bottom:25px;}
+	.custom_section2 .colbox ul li{margin-bottom:10px;color: #25408D;}	
+	.custom_tab .nav-link{font-family: "Roboto Slab", Sans-serif;
+    font-size: 16px;
+    background-color: #CFCFCF;
+    color: #25408D; margin-right:2px; border-radius:0px;}
+
+.tab_section .tab-content{border-left:1px solid #CFCFCF;border-right:1px solid #CFCFCF; border-bottom:1px solid #CFCFCF; padding:20px;}
+.list_item{font-family:'Roboto Slab', serif;}
+.list_item li{margin-bottom:6px;}
+.section_subpaper{background-color: #194697; padding:20px; padding-bottom:20px; margin-bottom:30px;}
+.section_subpaper h3{color:#fff;font-family:'Roboto Slab', serif; font-size:18px; margin-bottom:0px; text-align:center;}
+.accordion-item{border:0px; margin-bottom:5px;}
+
+
+.accordion .accordion-item .accordion-button{border-color:#f2f2f2;}
+.overlay1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(170 122 40 / 87%)!important;
+    /* background: linear-gradient(90deg, rgb(14 0 0) 0%, rgb(0 0 0 / 84%) 35%, rgb(18 0 0 / 97%) 100%); */
+}
+.custom_slidesection{margin-top:50px;}
+.custom_slidesection .owl-item{background-color:#CFCFCF;}
+.custom_slidesection .custom_slcontent{padding-top:10px; padding-bottom:10px;}
+.custom_slidesection .custom_slcontent h3{font-family:'Roboto Slab', serif; font-size:16px; font-size:#25408D; text-align:center; margin-bottom:0px; }
+.contactno_section{margin-top:40px; margin-bottom:40px;}
+.key_box {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    padding: 20px;
+    margin-bottom: 25px;
+    height: calc(100% - 31px);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.key_box h3 {
+    color: #25408D;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    min-height: 30px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+.colbox.min-heighttttt {
+    min-height: 906px !important;
+}
+
+
+
+
+.deans.text-center p {
+    padding: 22px 0px;
+}
+
+
+
+.colbox.min-hght {
+    min-height: 275px !important;
+}
+
+.colbox.min-hght h5 {
+    text-align: center;
+    padding: 17px 0px;
+    color: #194697;
+}
+
+
+.aboutttt.text-center p {
+    text-align: justify;
+}
+
+.aboutttjj.text-center p {
+    text-align: justify;
+}
+
+
+ul.listtt {
+    margin-bottom: 22px;
+}
+
+
+
+.btnnnnn {
+    text-align: center;
+}
+
+
+/*.contenttt.text-center {
+    min-height: 175px;
+
+
+
+
+        padding: 20px;
+    margin-bottom: 25px;
+    height: calc(100% - 31px);
+    background-color: white;
+    border-radius: 10px;
+
+    
+}
+*/
+
+
+
+.contenttt.text-center {
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    justify-content: space-between; /* Distributes content evenly */
+    align-items: center;
+    min-height: 175px;
+    padding: 20px;
+    margin-bottom: 25px;
+    height: 175px; /* Set a fixed height if you want uniformity */
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+section.padddingggggg {
+    padding: 40px 0px;
+}
+
+
+
+.abouttguest.text-center {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.contenttt.text-center h4 {
+    padding: 14px 0px;
+    font-size: 17px;
+}
+
+
+.contenttt.text-center h4 {
+    padding: 14px 0px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+</style>
+</body>
+</head>
+<body>
+ 
+<div class="left_icons"> 
+<a title="" href="../www.facebook.com/lamrintechuniv/index.html" target="_blank"><img src="assets/frontend/images/ff.png"></a>  
+<a title="" href="../x.com/lamrinuniv.html" target="_blank"><img src="assets/frontend/images/tt.png"></a> 
+<a title="" href="../www.instagram.com/lamrintechskillsuniversity/index.html" target="_blank"><img src="assets/frontend/images/ii.jpg">  </a> 
+<a title="" href="../www.youtube.com/channel/UCa-hPFUL3DypAk87S80eNwg.html" target="_blank"><img src="assets/frontend/images/ji.png"></a> 
+<a title="" href="../www.linkedin.com/uas/login5b0c.html"  target="_blank"><img src="assets/frontend/images/ahh.png"></a>
+</div>
+
+
+<!--  FLOTTING IMAGE START
+<div class="fix_payinemi">
+    <div data-brand-color="background" onclick="show()" class="fix_payinemi_inner"><a href="https://www.globalpasscareer.com/apply/lamrin" target="_blank"><img src="https://www.ltsu.ac.in/assets/frontend/images/admission-2025.png"></a></div> 
+</div> -->
+
+<!--
+<div class="fix_payinemi1">
+    <div data-brand-color="background" onclick="show()" class="fix_payinemi1_inner"><a href="https://www.ltsu.ac.in/btech-cst" target="_blank"><img src="https://www.ltsu.ac.in/assets/frontend/images/admission-cst.png"></a></div> 
+</div>  -->
+
+
+
+
+<div class="cp-widget-button">
+    <div data-brand-color="background" onclick="show()" class="cp-widget-button__inner"><a href="../api.whatsapp.com/sendeb9a.html?phone=918480005390"><img src="assets/frontend/images/whatsapp.png"></a></div>
+</div>
+<div class="cp-widget-button1">
+    <div data-brand-color="background" onclick="show()" class="cp-widget-button__inner1"><a href="tel:+918480005390"><img src="assets/frontend/images/call.png"></a></div>
+</div>
+ <div class="top-header-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="header-left-content">
+                            <p><i class="fa fa-university" aria-hidden="true" style="color:#000000;"></i> Welcome to Lamrin Tech Skills University Punjab</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5">
+                        <div class="header-right-content">
+                            <div class="list">
+                                <ul class="headerrrr">
+                                    <li><i class="fa fa-book" aria-hidden="true"></i> <a href="mandatory-disclosure.html"); ?>Mandatory Disclosure</a></li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@ltsu.ac.in">info@ltsu.ac.in</a></li>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header-right-content">
+                            <div class="list">
+                                <ul class="headerrrr"> 
+                                     <li><a href="../www.facebook.com/lamrintechuniv/index.html" target="_blank" style="background: white;
+    border-radius: 32px;
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;"><i class="fa fa-facebook" aria-hidden="true" ></i> </a></li>
+                                     <li><a href="../www.instagram.com/lamrintechskillsuniversity/index.html" target="_blank" style="background: white;
+    border-radius: 51px;
+    padding-left: 9px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 5px;"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
+                                     <li><a href="../x.com/lamrinuniv.html" target="_blank" style="background: white;
+
+
+    border-radius: 51px;
+    padding-left: 9px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 5px;"><i class="fa fa-twitter" aria-hidden="true" ></i></a></li>
+                                     <li><a href="../www.linkedin.com/uas/login5b0c.html" target="_blank" style="background: white;
+
+
+    border-radius: 32px;
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+                                     <li><a href="../www.youtube.com/channel/UCa-hPFUL3DypAk87S80eNwg.html" target="_blank" style="background: white;
+    border-radius: 32px;
+    padding-left: 9px;
+    padding-right: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a></li> 
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+<div class="menuuu ">
+  <div class="container">
+
+
+<div class="row">
+
+
+
+  
+
+
+
+
+      <div class="col-lg-5">
+     <a class="navbar-brand" href="../ltsu.ac.in/index.html"> <img src="assets/frontend/images/logo1.png" class="main-logo" alt="logo"> </a> 
+     </div>
+
+
+      <div class="col-lg-6"> 
+      <div class="addmisssionn addmisssionn-toop "> 
+        <ul class="righttt top-tab"> 
+           <img src="assets/frontend/images/loggg12.png" class="main-logo" alt="logo"> 
+           <li>
+                <a href="apply-now.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Apply Now</a>
+            </li> 
+        </ul> 
+      </div>
+     </div>
+
+
+
+
+
+    <div class="col-lg-1">
+
+    <div class="others-options jkll">
+            <div class="icon"> <i class="fa fa-bars" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i> </div>
+          </div>
+        
+    </div>
+</div>
+
+
+
+  </div>
+</div>
+<div class="navbar-area nav-bg-2">
+    <!--<div class="mobile-responsive-nav">
+        <div class="container">
+            <div class="mobile-responsive-menu">
+                <div class="logo">
+                    <a href="https://www.ltsu.ac.in/"> <img src="/assets/frontend/images/logo1.png" class="main-logo" lt="logo" /> <img src="https://www.ltsu.ac.in/assets/frontend/images/white-logo.png" class="white-logo" alt="logo" /> </a>
+                </div>
+               
+      
+            </div>
+               
+        </div>
+    </div>-->
+    <div class="desktop-nav1">
+        <div class="container">
+
+
+
+  <nav class="navbar navbar-expand-md navbar-light">
+
+
+
+  <div class="container">
+    <div class="row">
+		<div class="col-md-12">
+          <!--     <button class="navbar-toggler mobile_btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="ri-menu-3-fill"></i>
+      </button> -->
+
+        <div class="logo logo_mobile">
+        <a href="../ltsu.ac.in/index.html"><img src="assets/frontend/images/logo1.png" class="main-logo" lt="logo" /></a>
+      </div>
+      <div class="mobile_btn">
+        <i class="fa fa-bars"></i>
+      </div>
+   
+      <div class="main_menu">
+        <ul>
+          <li><a href="../ltsu.ac.in/index.html" class="active">Home</a></li>
+
+
+
+          <li class="mega_menu_dropdown has_dropdown">
+            <a href="#">About LTSU <i class="fa fa-angle-down"></i></a>
+<ul class="sub_menu submenu_mobile">
+ <li><a href="about-ltsu.html" class="nav-link">About LTSU</a></li>
+ <li><a href="approvals.html" class="nav-link">Recognitions & Approvals</a></li>
+<li><a href="vision-mission.html" class="nav-link">Vision and Mission</a></li>
+<li><a href="objectives.html" class="nav-link">Objectives</a></li>
+<li><a href="ltsu-at-glance.html" class="nav-link">LTSU at Glance</a></li>
+<li><a href="our-academic-skilling-framework.html" class="nav-link">Our Academic & Skilling Framework</a></li>
+<li><a href="leadership-team.html" class="nav-link">Leadership Team</a></li>
+<!-- <li><a href="https://www.ltsu.ac.in/founding-partners" class="nav-link">Founding Partners</a></li>  -->
+<li><a href="governing-body.html" class="nav-link">Governing Body</a></li> 
+<li><a href="board-of-management.html" class="nav-link">Board of Management</a></li>
+<li><a href="academic-council.html" class="nav-link">Academic Council</a></li> 
+<li><a href="committees-office-orders.html" class="nav-link">Committees and Office Orders</a></li>
+<li><a href="assets/frontend/pdf/UGC-Information_LTSU.pdf"  target="_blank" class="nav-link">Information Submitted to UGC</a></li>
+<!-- <li><a href="https://www.ltsu.ac.in/organogram" class="nav-link">Organogram</a></li>  -->
+<li><a href="chancellor-message.html" class="nav-link">Chancellor's Message</a></li>
+<!-- <li><a href="https://www.ltsu.ac.in/pro-chancellor-message" class="nav-link">Pro Chancellor's Message</a></li>  -->
+<li><a href="vice-chancellor-message.html" class="nav-link">Vice Chancellor's Message</a></li> 
+<li><a href="registrar-message.html" class="nav-link">Pro Vice Chancellor's Message</a></li>
+<!-- <li><a href="https://www.ltsu.ac.in/dean-academics-affairs" class="nav-link">Dean Academic Affairs</a></li> -->
+</ul>
+
+
+
+
+            <div class="mega_menu sub_menu">
+
+
+<div class="container">
+    <div class="row">
+
+    <div class="col-md-6">
+         <div class="mega_menu_item">
+                <h3>About LTSU</h3>
+                <a href="about-ltsu.html" class="nav-link">About LTSU</a>
+                <a href="vision-mission.html" class="nav-link">Vision and Mission</a>
+                <a href="objectives.html" class="nav-link">Objectives</a>
+                <a href="ltsu-at-glance.html" class="nav-link">LTSU at Glance</a>
+                <a href="our-academic-skilling-framework.html" class="nav-link">Our Academic & Skilling Framework</a>
+           <!--     <a href="https://www.ltsu.ac.in/founding-partners" class="nav-link">Founding Partners</a>   -->
+                <a href="governing-body.html" class="nav-link">Governing Body</a> 
+                <a href="leadership-team.html" class="nav-link">Leadership Team</a>
+                <a href="board-of-management.html" class="nav-link">Board of Management</a>
+                <a href="academic-council.html" class="nav-link">Academic Council</a>  
+                <a href="committees-office-orders.html" class="nav-link">Committees and Office Orders</a>
+                <a href="approvals.html" class="nav-link">Recognitions & Approvals</a>
+                <a href="assets/frontend/pdf/UGC-Information_LTSU.pdf"  target="_blank" class="nav-link">Information Submitted to UGC</a>
+           <!--      <a href="https://www.ltsu.ac.in/organogram" class="nav-link">Organogram</a>   -->
+              </div>
+    </div>
+     <div class="col-md-6">
+        
+              <div class="mega_menu_item">
+                <h3>Messages</h3>
+                <a href="chancellor-message.html" class="nav-link">Chancellor's Message</a>
+ <!--               <a href="https://www.ltsu.ac.in/pro-chancellor-message" class="nav-link">Pro Chancellor's Message</a>  -->
+                <a href="vice-chancellor-message.html" class="nav-link">Vice Chancellor's Message</a>
+                <a href="registrar-message.html" class="nav-link">Pro Vice Chancellor's Message</a>
+   <!--               <a href="https://www.ltsu.ac.in/dean-academics-affairs" class="nav-link">Dean Academic Affairs</a>-->
+              </div>
+
+    </div>
+</div>
+    
+</div>
+
+  </div>
+
+
+
+          </li>
+          <li class="has_dropdown">
+            <a href="#">Study with us <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+              <li><a href="university-school-of-engineering.html" class="nav-link">University School of Engineering & Technology</a></li> 
+              <li><a href="university-school-of-commerce-management.html" class="nav-link">University School of Commerce and Management</a></li>
+             <li> <a href="university-school-of-hotel-tourism-management.html" class="nav-link">University School of Hotel & Tourism Management</a></li>
+              <li><a href="university-school-of-polytechnic.html" class="nav-link">University School of Polytechnic</a></li>
+             <li> <a href="institute-of-pharmacy.html" class="nav-link">Rayat Institute of Pharmacy</a></li>
+              <!-- <a href="https://www.ltsu.ac.in/lamrin-business-school" class="nav-link">Lamrin Business School</a> -->
+              <li><a href="university-school-of-allied-health-sciences.html" class="nav-link">University School of Allied Health Sciences</a></li>
+              <li><a href="sggsjs-research-department.html" class="nav-link">University School of Sri Guru Gobind Singh Study and Research</a></li>
+ <!--             <li><a href="https://www.ltsu.ac.in/steller-school-of-real-estate" class="nav-link">Steller School of Real Estate</a></li>
+              <li> <a href="https://www.ltsu.ac.in/university-school-of-education-studies" class="nav-link">University School of Education Studies<br><h7>(Affiliated to Punjab University Chandigarh)</h7></a></li>
+
+              <li><a href="https://www.ltsu.ac.in/university-school-of-languages-communication" class="nav-link">University School of Languages & Communication</a></li>
+   -->           
+ 
+            <li> <a href="university-school-of-legal-studies.html" class="nav-link">University School of Legal Studies</a></li>
+              <li><a href="university-school-of-physical-education-sports.html" class="nav-link">University School of Physical Education and Sports</a></li>
+              <li><a href="university-school-of-computing.html" class="nav-link">University School of Computing</a></li>
+              <li><a href="lamrin-school-of-pharmaceutical-sciences.html" class="nav-link">Lamrin School of Pharmaceutical Sciences</a></li>
+              <li><a href="ucon.html" class="nav-link">University College of Nursing</a></li>
+              <li><a href="uslase.html" class="nav-link">University School of Liberal Arts, Sciences and Education</a></li>
+              <li><a href="usbw.html" class="nav-link">University School of Beauty and Wellness</a></li>
+              <li><a href="usd.html" class="nav-link">University School of Design</a></li>
+
+
+
+              <!-- 
+              <li><a href="https://rayatlaw.ac.in"  target="_blank" class="nav-link">Rayat College of LAW<br>Affiliated to Punjab University Chandigarh</a></li> -->
+
+            </ul>
+          </li>
+          <li class="mega_menu_dropdown has_dropdown"><a href="#">Admissions <i class="fa fa-angle-down"></i></a>
+              <ul class="sub_menu submenu_mobile">
+                    <li><a href="campus-virtual-tour.html" class="nav-link">Campus Virtual Tour</a></li>
+                    <li><a href="admission-criteria.html" class="nav-link">Admission Criteria</a></li>
+                 <!--   <li><a href="https://www.ltsu.ac.in/counselling-centre" class="nav-link">Counselling Centre</a></li> -->
+                    <li><a href="admission-policy.html" class="nav-link">Admission Policy</a></li>
+                    <li><a href="assets/frontend/pdf/fee-structure_2026-2027.html" target="_blank"  class="nav-link">Fee Structure</a></li>  
+                    <li><a href="assets/frontend/pdf/Hostel_fee_structure_2026-2027.html" target="_blank"  class="nav-link">Hostel Fee Structure</a></li>                    
+            <!--        <li><a href="https://www.ltsu.ac.in/migration-policy" class="nav-link">Migration Policy</a></li> -->
+                    <li><a href="refund-policy.html" class="nav-link">Refund Policy</a></li>
+                    <li><a href="scholarship.html" class="nav-link">Scholarship</a></li>
+
+
+                <!--    <li><a href="https://phd.ltsu.ac.in/" target="_blank" class="nav-link">Phd Admissions Jan 2026</a></li> -->
+                    <li><a href="international.html" class="nav-link">International Admissions</a></li> 
+                    <li><a href="research-development.html" class="nav-link">Research and Development Cell</a></li> 
+                    <li><a href="post-graduated-courses.html" class="nav-link">Post Graduate Courses</a></li>
+                    <li><a href="graduated-courses.html" class="nav-link">Undergraduate Courses</a></li>
+                    <li><a href="diploma-courses.html" class="nav-link">Diploma Courses</a></li>
+                 <!--   <li><a href="https://www.ltsu.ac.in/integrated-courses" class="nav-link">Integrated Courses</a></li>  -->
+                    <li><a href="certificate-courses.html" class="nav-link">Certificate Courses</a></li>
+                    <li><a href="gov-projs.html" class="nav-link">Govt. Funded Projects</a></li>
+                      <li><a href="education-loan.html" class="nav-link">Education Loan</a></li>
+                 
+            </ul>
+
+
+            
+            <div class="mega_menu sub_menu">
+
+
+<div class="container">
+
+    <div class="row">
+
+    <div class="col-md-6">
+           <div class="mega_menu_item">
+                <h3>APPLYING TO LAMRIN</h3>
+                <a href="campus-virtual-tour.html" class="nav-link">Campus Virtual Tour</a>
+                <a href="admission-criteria.html" class="nav-link">Admission Criteria</a>
+         <!--       <a href="https://www.ltsu.ac.in/counselling-centre" class="nav-link">Counselling Centre</a>  -->
+                <a href="admission-policy.html" class="nav-link">Admission Policy</a>
+                <a href="assets/frontend/pdf/fee-structure_2026-2027.html" target="_blank"  class="nav-link">Fee Structure</a>   
+                <a href="assets/frontend/pdf/Hostel_fee_structure_2026-2027.html" target="_blank"  class="nav-link">Hostel Fee Structure</a>   
+        <!--        <a href="https://www.ltsu.ac.in/migration-policy" class="nav-link">Migration Policy</a>  -->
+                <a href="refund-policy.html" class="nav-link">Refund Policy</a>
+                <a href="scholarship.html" class="nav-link">Scholarship</a>
+                <a href="assets/frontend/pdf/LTSUAdmission-AY2026-2027.html" target="_blank" class="nav-link">Admission Prospectus</a>
+       <!--         <a href="https://www.ltsu.ac.in/faqs" class="nav-link">FAQs</a> -->
+                <a href="blog/index.html"  target="_blank">Blog </a>                 
+            <!--    <a href="https://www.ltsu.ac.in/faqs-for-stud-education-loan" class="nav-link">Education Loan</a>-->
+           </div>
+
+    </div>
+
+        <div class="col-md-6">
+              <div class="mega_menu_item">
+                <h3>LTSU 2026 </h3>
+             <!--   <a href="https://www.ltsu.ac.in/phd-program" class="nav-link">Ph. D. Program</a>
+                <a href="https://phd.ltsu.ac.in/" target="_blank" class="nav-link">Phd Admissions Jan 2026</a> -->
+                <a href="international.html" class="nav-link" target="_blank">International Admissions</a>  
+                <a href="research-development.html" class="nav-link">Research and Development Cell</a> 
+                <a href="post-graduated-courses.html" class="nav-link">Post Graduate Courses</a>
+                <a href="graduated-courses.html" class="nav-link">Undergraduate Courses</a>
+                <a href="diploma-courses.html" class="nav-link">Diploma Courses</a>
+            <!--    <a href="https://www.ltsu.ac.in/integrated-courses" class="nav-link">Integrated Courses</a>  -->
+                <a href="certificate-courses.html" class="nav-link">Certificate Courses</a>
+                <a href="gov-projs.html" class="nav-link">Govt. Funded Projects</a>
+              </div>
+              <div class="mega_menu_item">
+                <h3>EDUCATION LOAN </h3>
+               <a href="faqs-for-stud-education-loan.html" class="nav-link">Education Loan FAQ</a>
+                <a href="nocostemi.html" class="nav-link">No Cost EMI Option</a>
+                <a href="payafterplacement.html" class="nav-link">Pay After Placement</a>
+      <!--          <a href="https://www.ltsu.ac.in/assets/frontend/pdf/LTSU_ICICI BANK_EL_offer.pdf" target="_blank" class="nav-link">ICICI Bank Approval Letter</a>
+                <a href="https://www.ltsu.ac.in/assets/frontend/pdf/GrayQuest-EMI-Letter.pdf" target="_blank" class="nav-link">Grayquest Approval Letter</a>
+                <a href="https://grayquest.com/institute/lamrin-university" target="_blank" class="nav-link">Zero cost easy EMI (GrayQuest)</a>  
+                <a href="https://loans.icicibank.com/loans/education-loan/#/verify/EducationLoan/Student-VerifyDetailsPage" target="_blank" class="nav-link">Apply Online Education Loan (ICICI)</a>-->
+                
+               
+              </div>
+    </div>
+    
+    
+</div>
+
+    
+</div>
+
+</div>
+          </li>
+
+
+
+          <li class="has_dropdown">
+            <a href="#">International<i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+              <li> <a href="international.html" class="nav-link">Admissions</a></li>
+            </ul>
+          </li>
+
+
+
+
+<!-- 
+          <li class="has_dropdown">
+            <a href="#">News & Events <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+              <li> <a href="https://www.ltsu.ac.in/news" class="nav-link">News</a></li>
+               <li><a href="https://www.ltsu.ac.in/events" class="nav-link">Events</a></li>
+               <li><a href="https://www.ltsu.ac.in/blog" class="nav-link"   target="_blank">Blog</a></li>
+               <li><a href="https://www.ltsu.ac.in/notices-circulars" class="nav-link">Notices/Circulars</a></li>
+               <li><a href="https://www.ltsu.ac.in/newsletter" class="nav-link">News Letter</a></li>
+               <li><a href="https://www.ltsu.ac.in/yuva" class="nav-link">Yuva Kaushal Utsav 2026</a></li> 
+              <li><a href="https://www.ltsu.ac.in/iste" class="nav-link">ISTE National Convention<br>and Yuva Kaushal Utsav 2025</a></li> 
+            </ul>
+          </li>
+-->
+
+          <li class="has_dropdown">
+            <a href="../lijmr.ltsu.ac.in/index.html"   target="_blank">LIJMR Journal<i class="fa fa-angle-down"></i></a>
+          </li>
+
+
+
+
+
+          <li class="has_dropdown">
+            <a href="#">Campus <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+
+              <li> <a href="news.html" class="nav-link">News</a></li>
+               <li><a href="events.html" class="nav-link">Events</a></li>
+               <li><a href="blog/index.html" class="nav-link"   target="_blank">Blog</a></li>
+               <li><a href="notices-circulars.html" class="nav-link">Notices/Circulars</a></li>
+               <li><a href="newsletter.html" class="nav-link">News Letter</a></li>
+               <li><a href="infrastructure.html" class="nav-link">Infrastructure</a></li>
+               <li><a href="academic-facilities.html" class="nav-link">Academic Facilities</a></li>
+               <li><a href="campus-facilities.html" class="nav-link">Campus Facilities</a></li>
+               <li><a href="hostel-facilities.html" class="nav-link">Hostel Facilities</a></li>
+               <li><a href="transport-facilities.html" class="nav-link">Transport Facilities</a></li>
+               <li><a href="residential-facilities.html" class="nav-link">Residential Facilities</a></li>
+               <li><a href="library.html" class="nav-link">Library</a></li>
+               <li><a href="nss.html" class="nav-link">NSS</a></li>
+               <li><a href="sports.html" class="nav-link">Sports</a></li>
+            </ul>
+          </li>
+<!--
+          <li class="has_dropdown">
+            <a href="#">EOI <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+              <li><a href="https://www.ltsu.ac.in/infrastructure" class="nav-link">EOI 1.0 - Empanellment of  Training Partner</a></li>
+            </ul>
+          </li>
+-->
+
+
+          <li class="has_dropdown">
+            <a href="#">Student Corner <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu">
+               <li><a href="notices-circulars/students.html" class="nav-link">Circular</a></li>
+                <li><a href="student-welfare-services.html" class="nav-link">Student Welfare Services</a></li>
+              
+               <li><a href="../erp.ltsu.in/student-portal/login.html" class="nav-link"  target="_blank">Student LogIn</a></li>
+               <li><a href="anti-ragging.html" class="nav-link">Anti Ragging</a></li>
+               <li><a href="esanad.html" class="nav-link">eSanad</a></li>
+               <li><a href="../nad.digilocker.gov.in/index.html" class="nav-link" target="_blank">NAD – National Academic Depositary</a></li>
+               <li><a href="../pay.jodo.in/pages/7Wwawt9NEgY8Dxk8.html" class="nav-link" target="_blank">Document Verification Fee</a></li>
+               
+               
+            </ul>
+          </li>
+          <li class="has_dropdown">
+            <a href="#">Contact Us <i class="fa fa-angle-down"></i></a>
+            <ul class="sub_menu jkl">
+              <a href="how-to-reach-ltsu.html" class="nav-link">How to Reach</a>
+              <a href="contact-us.html" class="nav-link">Contact Us</a>
+              <a href="job-opportunities.html" class="nav-link">Career with LTSU</a>
+              <a href="grievance.html" class="nav-link">Grievances</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </div>
+</nav>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- </div> -->
+<div class="sidebarModal modal right fade pb-60" id="sidebarModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-bs-dismiss="modal"><i class="fa fa-times"></i></button>
+      <div class="modal-body"> <a href="../ltsu.ac.in/index.html"> <img src="assets/frontend/images/logo1.png" class="main-logo" alt="logo"> <img src="assets/frontend/images/logo1.png" class="white-logo" alt="logo"> </a>
+        <div class="sidebar-content">
+          <h3>About Us</h3>
+          <p>Lamrin has been recognised as a University “of” the industry, “for” the industry, and “by” the industry. Partnering with global tech giants to structure the curriculum, making students industry-ready by training in skill-based courses, mentored by leading industry experts and academicians, Lamrin aims at making India a leader in the skill-based workforce supply chain worldwide.
+</p>
+          <div class="sidebar-btn"> <a href="#" class="default-btn">Let's Talk</a> </div>
+        </div>
+        <div class="sidebar-contact-info">
+          <h3>Contact Information</h3>
+          <ul class="info-list">
+            <li><i class="fa fa-phone"></i> <a href="tel:+01881270693">01881 – 270693</a> 
+
+            <br>
+        <!--    <a href="tel:+918588862034">+91 8588862034 </a> -->
+
+            <br>
+            <a href="tel:+918480005390">+91 8480005390</a>
+          
+
+        </li>
+            <li><i class="fa fa-envelope"></i><a href="mailto: info@ltsu.ac.in"> info@ltsu.ac.in</a></li>
+            <li><i class="fa fa-map-marker"></i> 40 min drive from Chandigarh & 6 KM drive from Ropar on Chandigarh – Jalandhar Highway<br>(NH 344A) Punjab. India, PIN: 144533 </li>
+          </ul>
+        </div>
+        <ul class="sidebar-social-list">
+          <li> <a href="../www.facebook.com/lamrintechuniv/index.html" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+          <li> <a href="../x.com/lamrinuniv.html" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+          <li> <a title="" href="../www.linkedin.com/uas/login5b0c.html"  target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+          <li> <a href="../www.youtube.com/channel/UCa-hPFUL3DypAk87S80eNwg.html" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+          <li> <a href="../www.instagram.com/lamrintechskillsuniversity/index.html" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+        </ul>
+  <!--       <div class="contact-form">
+          <h3>Ready to Get Started?</h3>
+         <form id="contactForm">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" required data-error="Please enter your name" placeholder="Your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" required data-error="Please enter your email" placeholder="Your email address">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <input type="text" name="phone_number" class="form-control" required data-error="Please enter your phone number" placeholder="Your phone number">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <textarea name="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Write your message..."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <button type="submit" class="default-btn">Send Message<span></span></button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </form> 
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="page-banner-area bg-2" style="background-image: url(assets/frontend/images/page-banner/leadership.jpg); background-size: cover;background-position: centr center;">
+  <div class="container">
+    <div class="page-banner-content">
+      <h1>Leadership</h1>
+      <ul>
+        <li><a href="../ltsu.ac.in/index.html">Home</a></li>
+        <li><a href="leadership-team.html">LTSU Leadership</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Menues START 
+
+        <div class="col-lg-12" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true">
+          <div class="addmisssionn">
+            <ul class="righttt">
+              <li><a href="#vcc"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Vice-Chancellors' Conclave</a></li>
+               <li><a href="#faccon"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Faculty Conclave</a></li>
+              <li><a href="#stucon"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Students' Conclave</a></li>
+              <li><a href="iste-registration2025" aria-hidden="true"></i><i class="fa fa-angle-double-right" aria-hidden="true"></i> Registration</a></li>
+             <li><a href="ideathon2025" aria-hidden="true"></i><i class="fa fa-angle-double-right" aria-hidden="true"></i> Ideathon</a></li>
+             <li><a href="iste-registration2025" aria-hidden="true"></i><i class="fa fa-angle-double-right" aria-hidden="true"></i>Download Photographs</a></li>
+            </ul>
+          </div>
+        </div>
+   Menues END  -->
+
+
+<!-- ABOUT THE EVENT START  -->
+
+<div class="podcasts-area pt-60 pb-20 "   style="background-image: url(assets/frontend/images/map1111.png); background-size:cover; background-attachment: fixed;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+      <h2 style="color:#285476;font-size:36px; ">LTSU LEADERSHIP</h2>
+    </div>
+    </div>
+    </div>
+ <!-- 
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+            <div class="text-center">
+              <p>The first of its kind <strong>ISTE National Convention and Yuva Kaushal Utsav 2025</strong>, scheduled to be held from <strong>February 13-14, 2025</strong>, at <strong>Lamrin Tech Skills University (LTSU), Punjab</strong>, is a landmark initiative aimed at transforming India into the global skill capital. This two-day convention brings together policymakers, academic leaders, industry experts, faculty, and students for a vibrant exchange of ideas and innovations.
+
+                The event will feature keynote sessions, hackathon/Ideathon, poster and technical paper presentations, and cultural showcases from across India, emphasizing skilling youth for global opportunities in high-impact sectors such as healthcare, renewable energy, electric vehicles (EVs), and AI fusion technologies.</p>
+            </div>
+          </div>
+        </div>
+  -->   
+
+
+        <br>   
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT THE EVENT START 
+
+
+
+ORGANIZED START 
+
+
+<section style="background:#c49e58; padding-top:40px; padding-bottom:50px;">
+     <div class="container">
+		<div class="row">
+        	<div class="col-md-12">
+        <div class="section-title style2 text-center">
+          <h2 style="color:#fff; font-family:'Roboto Slab', serif;;">Organized By</h2>
+        <p> <strong>Collaborations that Pave the Way to an Extraordinary Global Career </strong> </p> 
+        </div>
+        </div>
+        </div>
+        
+</div>
+<div class="row justify-content-center" style="margin-bottom:30px;">
+
+<div class="col-lg-4 col-md-4">
+      <div class="our-misss three-1">
+            <img src="https://www.ltsu.ac.in/assets/frontend/images/ltsu-logo.png">
+      </div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-12 col-md-12 text-center">
+		<a href="https://www.ltsu.ac.in/assets/frontend/pdf/FINAL_ISTE_brochure.pdf"  target="_blank" class="btn btn-primary">Brochure  <i class="fa fa-arrow-circle-o-right"></i></a> 
+        
+       <a href="https://www.ltsu.ac.in/iste-registration2025" class="btn btn-primary">Register Now  <i class="fa fa-arrow-circle-o-right"></i></a>
+
+         <a href="https://www.ltsu.ac.in/iste-registration2025" class="btn btn-primary">Download Photographs..<i class="fa fa-arrow-circle-o-right"></i></a>
+        
+         <a href="https://www.ltsu.ac.in/yuva" class="btn btn-primary">Yuva Kaushal Utsav<i class="fa fa-arrow-circle-o-right"></i></a>        
+
+      
+</div>
+</div>
+
+</section>
+
+
+
+ ORGANIZED END  
+
+
+<section class="padddingggggg">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2 style="color: #285476; font-size: 36px; font-family: 'Roboto Slab', serif;">Chief Guest and other Distinguished guests</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/sh-gulab-chand-kataria-honble-governor-of-punjab.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Sh. Gulab Chand Kataria<br>Hon'ble Governor of Punjab</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Chief Guest</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/sh-harjot-singh-bains.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Sh. Harjot Singh Bains (Cabinet Minister Punjab Higher Education and Languages | Information & Public Relations | School Education Technical Education & Industrial Training)</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Presiding Over</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/dr-vinod-k-paul-member-niti-aayog.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Dr. Vinod K. Paul<br>Member, NITI Aayog</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Distinguished<br>Guest of Honor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/shri-ved-mani-tiwari-chief-executive-officer-nsdc.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Shri. Ved Mani Tiwari<br>Chief Executive Officer, NSDC</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Special Guest of Honor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/prof-t-g-sitharam-chairman-aicte.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Prof. T. G. Sitharam<br>Chairman, AICTE</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Guest of Honor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="abouttguest text-center">
+                    <img src="https://www.ltsu.ac.in/assets/frontend/images/prof-anil-sahasrabudhe-chairman-executive-committee-naac.jpg" />
+                    <div class="contenttt text-center">
+                        <h4>Prof. Anil Sahasrabudhe<br>Chairman, Executive Committee, NAAC</h4>
+                        <h4 style="color: #285476; font-size: 26px; font-family: 'Roboto Slab', serif;">Guest of Honor</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+ ABOUT ISTE START
+
+<div class="campus-information-area pt-60 pb-50 welcome-mobile" style="background-image: url(https://www.ltsu.ac.in/assets/frontend/images/bg--1001.png); background-size: cover; background-attachment: fixed;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+      <div class="section-title">
+      <h2 style="color:#285476;font-size:36px; font-family:'Roboto Slab', serif;">About ISTE</h2>
+    </div>
+    </div>
+    </div>
+    
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+            <div class="aboutttjj text-center">
+              <p> The ISTE is a premier national organization dedicated to advancing technical education and fostering professional excellence among educators and students. Established in 1968, ISTE focuses on enhancing the quality of technical education in India by providing a platform for knowledge sharing, professional networking, and skill development. ISTE has an Executive Council at National level. It has active membership of more than 141431 technical teachers, more than 3304 institutional members (including IITs, IISc., NITs and other leading technical institutions), 1480 faculty chapters and 1837 students’ chapters throughout the country and 19 Sections at State Level<br><br>The major objective of the ISTE is to provide quality training programmes to the teachers and the administrators of technical institutions. This is enabling to update their knowledge and skills in their fields and lead to the production and development of top-quality professional engineers and technicians needed by the industry and other organisations.
+           <br><br>
+                Being the leading national organization of educators in the field of engineering and technology ISTE effectively contributes in various missions of the Union Government and coordinates meaningful interaction among technical institutions of Degree/ Diploma levels all over the country through seminars, workshops and conferences. It organizes an annual convention for faculty and students separately every year where a large number of technocrats, technical teachers, policy makers, experts from the industry etc. participate and interact.
+</p>
+            </div>
+          </div>
+        </div>
+        <br>   
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+ ABOUT ISTE END 
+
+
+
+  MAIN THEME SATRT 
+
+<div class="academics-area  overlay1 pt-100 pb-70" style="background-image: url(https://www.ltsu.ac.in/assets/frontend/images/bg-100000.jpg); background-size:cover; ">
+  <div class="container">
+    <div class="section-title">
+      <h2 style="color:#fff; font-family:'Roboto Slab', serif;">Main Theme</h2>
+      <h2 style="color:#fff; font-family:'Roboto Slab', serif;">Vision 2047</h2>
+      <p style="color:#fff; font-size:16px; font-family:'Roboto Slab', serif;"><strong>Transforming Education System for Making India Skill Capital of the World</strong></p>
+      <p style="color:#fff; font-size:16px; font-family:'Roboto Slab', serif;">Tagline: <strong>“Where Skills Meet Excellence”</strong></p>
+    </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+            <div class="aboutttt text-center ">
+              <p style="color:#fff;font-family:'Roboto Slab', serif;;">Our endeavour is to promote innovation and workforce excellence by transforming the education ecosystem to meet global skill demands. Through various sessions, we want to derive insights that will help us develop a forward-looking strategy that integrates advanced technologies, interdisciplinary education, and strong academic-industry partnerships to develop a globally competitive and empowered youth workforce.</p>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+
+   MAIN THEME END 
+
+
+  ORGANIZING PANEL START 
+
+<section class="custom_section2">
+	<div class="container">
+    		
+            <div class="row">
+            	<div class="col-md-4">
+                <div class="col-md-12">
+                	<div class="colbox">
+             Top Row START 
+                    	<div class="row">
+                        	<div class="col-md-12">
+                            	<div class="cardhead">
+                                	<i class="fa fa-users" aria-hidden="true"></i>
+
+                                	<h4>Chief Patron</h4>
+                              </div>
+                          </div>
+                      </div>
+            Top Row START 
+
+                    <div class="row">
+                      <div class="col-md-12">
+                          <ul>
+                           <li><span dir="ltr" role="presentation">Dr. Sandeep Singh Kaura</span><br>
+                            Chancellor, LTSU Punjab
+                           </li>
+                           <li><span dir="ltr" role="presentation">Dr. Pratpsinh K. Desai</span><br>
+                            President, ISTE
+                           </li>
+                          </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                          <div class="cardhead">
+                              <i class="fa fa-users" aria-hidden="true"></i>
+                              <h4>Organizing Chairpersons</h4>
+                          </div>
+
+
+                      <div class="row">
+                          <div class="col-md-12">
+                            <ul>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) Rajiv Mahajan</span><br>
+                                Registrar, LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) H.P.S. Dhami</span><br>
+                                Exectutive Dean, LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) Navneet Chopra</span><br>
+                                Dean Academics, LTSU Punjab
+                                </li>
+                            </ul>
+                          </div>
+                      </div> 
+
+                    </div>
+
+
+                    <div class="col-md-12">
+                          <div class="cardhead">
+                              <i class="fa fa-users" aria-hidden="true"></i>
+                              <h4>Organizing Secretaries</h4>
+                          </div>
+
+
+                      <div class="row">
+                          <div class="col-md-12">
+                            <ul>
+                                <li><span dir="ltr" role="presentation">Mr. Satbir Singh Bajwa</span><br>
+                                Jt Registrar (Chancellor Office), LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Mr. Vimal Manhotra</span><br>
+                                Director (Finance & Strategy), LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) V. K. Saini</span><br>
+                                Deputy Dean USET, LTSU Punjab
+                                </li>
+                            </ul>
+                          </div>
+                      </div> 
+                          
+                    </div>
+
+
+
+
+                   </div>
+                </div>
+              </div>
+
+
+                <div class="col-md-4">
+                	<div class="colbox min-heighttttt">
+                    	<div class="row">
+                        	<div class="col-md-12">
+                            	<div class="cardhead">
+                                	<i class="fa fa-users" aria-hidden="true"></i>
+
+                                	<h4>Patron</h4>
+                                </div>
+                            </div>
+                            </div>
+                    	<div class="row">
+                        	<div class="col-md-12">
+                    	       <ul>
+                                <li><span dir="ltr" role="presentation">Dr. Parvinder Kaur</span><br>
+                                Pro Chancellor, LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) A S Chwala</span><br>
+                                Vice Chancellor, LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Dr. Kalyan Kuppachi</span><br>
+                                Pro Vice Chancellor (Industry), LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. (Dr.) Jagdeep Kaur</span><br>
+                                Pro Vice Chancellor (Academics), LTSU Punjab
+                                </li>
+                                <li><span dir="ltr" role="presentation">Shri R. Baskar</span><br>
+                                Vice President ISTE
+                                </li>
+                                <li><span dir="ltr" role="presentation">Dr. Gujjala Venkatasubbaiah</span><br>
+                                Vice President, ISTE
+                                </li>
+                                <li><span dir="ltr" role="presentation">Prof. Sharanappa G. Malasshetty </span><br>
+                                Hon. Treasurer ISTE
+                                </li>
+                                <li><span dir="ltr" role="presentation">Dr. Syed Majid Ali</span><br>
+                                Executive Secretary, ISTE
+                                </li>
+
+
+
+                             </ul>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                	<div class="colbox  min-heighttttt">
+                    	<div class="row">
+                        	<div class="col-md-12">
+                            	<div class="cardhead">
+                                	<i class="fa fa-users" aria-hidden="true"></i>
+
+                                	<h4>Advisory Committee </h4>
+                                </div>
+                            </div>
+                            </div>
+                    	<div class="row">
+                        	<div class="col-md-12">
+                    	<ul>
+                            <li><span dir="ltr" role="presentation">Mr. Vithal Madyalkar, Country Head IBM</span></li>
+                            <li><span dir="ltr" role="presentation">Prof. (Dr.) Chandan Chowdhury, Senior Associate Dean & Professor of Practice, ISB Director, Munjal Institute for Global Manufacturing & Punj-Lloyd Institute & Infrastructure Management. ISB</span></li>
+                            <li><span dir="ltr" role="presentation">Mr. Sanjiv Mehta, Advisor & Head - Program Development, IBM</span></li>
+                            <li><span dir="ltr" role="presentation">Mr. Sanjai Ranganathan, Chief Executice, L&T EduTech</span></li>
+                            <li><span dir="ltr" role="presentation">Dr. Gururaj, VIce President, Business Development & Innovation</span></li>
+                            <li><span dir="ltr" role="presentation">Mr. Ashish Tanwar, Head of University Hiring (India and APJ), Zscaler</span></li>
+                            <li><span dir="ltr" role="presentation">Dr. Kiran Rajana, Chair, Ethnotech</span></li>
+                            <li><span dir="ltr" role="presentation">Prof. (Dr.) R. P. Singh Suker-Chakia, Chairman ISTE Pb, Chd, HP and J&K Section</span></li>
+                            <li><span dir="ltr" role="presentation">Prof. (Dr.) Buta Singh Sidhu, Member, National Executive Council ISTE, New Delhi</span></li>
+                            <li><span dir="ltr" role="presentation">Prof. (Dr.) Deepkamal Kaur Randhawa, Member, National Executive Council ISTE, New Delhi</span></li>
+                            <li><span dir="ltr" role="presentation">Prof. (Dr.) S. K. Gandhi, Secretary ISTE Pb, Chd, HP and J&K Section</span></li>
+                            <li><span dir="ltr" role="presentation">Dr. C. C. Handa, ISTE EC Member & Chairman, Technical Committee</span></li>
+
+</ul>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+
+
+
+
+  <div class="container">
+        
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="colbox">
+             Top Row START 
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="cardhead">
+                                  <i class="fa fa-users" aria-hidden="true"></i>
+
+                                  <h4>Organizing Committee</h4>
+                              </div>
+                          </div>
+                      </div>
+              Top Row START 
+
+                    <div class="row" align="centers">
+                      <div class="col-md-12">
+
+
+
+
+
+    <div class="deans   text-center">
+                        <p>All Deans, Directors, Heads, Committee Coordinators & Members</p>
+</div>
+
+
+
+
+
+                      </div>
+                    </div>
+</div></div></div>
+
+
+
+
+
+
+</section>
+
+
+  ORGANIZING PANEL END 
+
+ Program Panel START 
+<section class="section_subpaper">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h3>PROGRAM SCHEDULE</h3>
+            </div>
+            </div>
+            </div>
+</section>
+<section class="tab_section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              
+  <div class="nav nav-tabs custom_tab nav-justified" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-abstract" type="button" role="tab" aria-controls="nav-abstract" aria-selected="true"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 13th FEBRUARY 2025</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-publication" type="button" role="tab" aria-controls="nav-publication" aria-selected="false"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 14th FEBRUARY 2025</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-reg" type="button" role="tab" aria-controls="nav-reg" aria-selected="false"> EVENTS FOR YUVA KAUSHAL UTSAV 2025</button>
+  </div>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-abstract" role="tabpanel" aria-labelledby="nav-abstract-tab">
+     
+   <div class="row">
+      <div class="col-md-6">
+
+      <ul class="list_item" style="font-size:14px;">
+            <li>Registration of Participants</li>
+            <li>Keynote Session - I</li>
+            <li>Keynote Session - II</li>
+            <li><a href="https://www.ltsu.ac.in/ideathon2025">Ideathon</a></li>
+            <li>Technical Papers presentation <br>
+             - Project display<br>
+             - Poster Presentation<br>
+             - Publishers & Manufacturers</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+
+      <ul class="list_item" style="font-size:14px;">
+            <li>Skill Based Competitions</li>
+            <li> ISTE Executive Council Meeting</li>
+            <li>Registration of Participants</li>
+            <li>Cultural Program- Highlighting Punjab Rich Heritage<br> <i> (Lunch and Dinner as per schedule)</i></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-publication" role="tabpanel" aria-labelledby="nav-publication-tab">
+
+    <div class="row">
+      <div class="col-md-6">
+      <ul class="list_item" style="font-size:14px;">
+            <li>Registration of Participants</li>
+            <li> Inauguration Ceremony<br>
+                - Welcome of Chief Guest and other dignitaries<br>
+                - Cultural Performances<br>
+                - Keynote address Special Guests of Honour<br>
+                - Keynote address Distinguished Guest of Honour<br>
+                - Presidential Remarks<br>
+                - Address by Chief Guest<br>
+                - Vote of thanks<br>
+            </li>
+            <li>Inauguration of Centre for Future Skills </li>
+        </ul>
+     </div>
+
+      <div class="col-md-6">
+      <ul class="list_item" style="font-size:14px;">
+            <li>Interaction Schedule of Chief Guest <br>
+             - Exhibition<br>
+               -- Project display<br>
+               -- Poster Presentation<br>
+               -- Publishers & Manufacturers<br>
+             -  Vice-Chancellors' Conclave<br>
+             -  Faculty Conclave<br>
+             -  Students' Conclave<br>
+             -  Skill Based Competitions<br>
+             -  Principals' Conclave<br>
+           </li>
+            <li>Awards Ceremony</li>
+            <li>Cultural Events</li>
+            <li>Closing Ceremony<br> <i>  (Lunch and Dinner as per schedule)</i></li>
+        </ul>
+     </div>     
+   </div>
+  </div>
+  <div class="tab-pane fade" id="nav-reg" role="tabpanel" aria-labelledby="nav-reg-tab">
+   <div class="row">
+      <div class="col-md-6">
+      <ul class="list_item" style="font-size:14px;">
+            <li>Mime</li>
+            <li>Skit</li>
+            <li>Group Dance</li>
+            <li>Lathe Strife</li>
+            <li>Plumbing Knack</li>
+            <li>Workshop on Emerging Technologies</li>
+            <li>Collage Making</li>
+            <li>E-Gaming</li>
+            <li>Blind Coding</li>            
+        </ul>
+      </div>
+       <div class="col-md-6">
+      <ul class="list_item" style="font-size:14px;">
+
+            <li>Mike Drop</li>
+            <li>No fire Cooking </li>
+            <li>Carve your way</li>
+            <li>Web Weavers</li>
+            <li>Shark Tank</li>
+            <li>Sustainable Business Development Model</li>
+            <a href="https://www.ltsu.ac.in/yuva"  target="_blank" class="btn btn-primary">For More Information<i class="fa fa-arrow-circle-o-right"></i></a>     
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeltCOFNRmEMf8sDGYxSJB5rTOXeplkJKW-BDPajCRfYr9IRw/viewform?usp=sf_link"  target="_blank" class="btn btn-primary">Register Now<i class="fa fa-arrow-circle-o-right"></i></a> 
+
+        </ul>        
+      </div>   
+   </div>
+  </div>
+  <div class="tab-pane fade" id="nav-impdate" role="tabpanel" aria-labelledby="nav-impdate-tab">Important Date Content</div>
+  <div class="tab-pane fade" id="nav-brochure" role="tabpanel" aria-labelledby="nav-brochure-tab">  <iframe class="embed-responsive-item" src="https://www.ltsu.ac.in/assets/frontend/pdf/FINAL_ISTE_brochure_draft.pdf" allowfullscreen style="width:100%; height:600px;"></iframe>
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+ Program Panel END 
+
+
+
+
+  Paper Erceived Panel START 
+<section class="section_subpaper">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<h3>SUBMIT YOUR PAPER TO THE MAIL ID : istepaper@ltsu.ac.in</h3>
+            </div>
+            </div>
+            </div>
+</section>
+<section class="tab_section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	
+  <div class="nav nav-tabs custom_tab nav-justified" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-abstract" type="button" role="tab" aria-controls="nav-abstract" aria-selected="true"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Abstract Format</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-publication" type="button" role="tab" aria-controls="nav-publication" aria-selected="false"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Publication</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-reg" type="button" role="tab" aria-controls="nav-reg" aria-selected="false">Registration</button>
+    
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-impdate" type="button" role="tab" aria-controls="nav-impdate" aria-selected="false">Important Dates</button>
+    
+      
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-brochure" type="button" role="tab" aria-controls="nav-brochure" aria-selected="false">Brochure</button>
+  </div>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-abstract" role="tabpanel" aria-labelledby="nav-abstract-tab">
+  		<ul class="list_item" style="font-size:14px;">
+        	<li>dasdd</li>
+            <li>dasdd</li>
+            <li>dasdd</li>
+        </ul>
+  
+  </div>
+  <div class="tab-pane fade" id="nav-publication" role="tabpanel" aria-labelledby="nav-publication-tab">Publication Content</div>
+  <div class="tab-pane fade" id="nav-reg" role="tabpanel" aria-labelledby="nav-reg-tab">Registration  Content</div>
+  <div class="tab-pane fade" id="nav-impdate" role="tabpanel" aria-labelledby="nav-impdate-tab">Important Date Content</div>
+  <div class="tab-pane fade" id="nav-brochure" role="tabpanel" aria-labelledby="nav-brochure-tab">  <iframe class="embed-responsive-item" src="https://www.ltsu.ac.in/assets/frontend/pdf/FINAL_ISTE_brochure_draft.pdf" allowfullscreen style="width:100%; height:600px;"></iframe>
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+  Paper Rerceived Panel END -->
+
+
+
+<!-- Convention Starts-->
+<section class="custom_section1">
+  <div class="container">
+        <div class="row">
+              <div class="col-md-12">
+                  <div class="headsec">
+              <!--      <h2>Registration Fee</h2> -->
+                        <p></p>    
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="colbox min-hght jkllllll text-center">
+
+
+   <img src="assets/frontend/images/chancellor-secretariat1.png">
+                    <h5>CHANCELLOR SECRETARIAT</h5>
+<!--                      <ul class="listtt"> 
+                                                    
+                           <li><span dir="ltr" role="presentation">ISTE MEMBER - Rs. 500/- </span></li>
+                           <li><span dir="ltr" role="presentation">NON ISTE MEMBER - Rs. 750/-</span></li>
+                       </ul>  
+-->
+
+              <div class="btnnnnn">
+                       <a href="chancellor-secretariat.html" class="btn btn-primary">Visit Now <i class="fa fa-arrow-circle-o-right"></i></a>
+</div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                <div class="colbox min-hght jkllllll text-center">  
+
+
+
+
+
+                    <img src="assets/frontend/images/senior-officials.png">
+
+                <h5>SENIOR OFFICIALS</h5>              
+<!--                      <ul class="listtt"> 
+                                                    
+                           <li><span dir="ltr" role="presentation">ISTE MEMBER - Rs. 500/- </span></li>
+                           <li><span dir="ltr" role="presentation">NON ISTE MEMBER - Rs. 750/-</span></li>
+                       </ul>  
+-->
+                    
+     <div class="btnnnnn">
+                      <a href="senior-officials.html" class="btn btn-primary">Visit Now  <i class="fa fa-arrow-circle-o-right"></i></a>
+
+</div>
+                    </div>
+                </div>
+
+             
+            </div>
+    </div>
+</section>
+
+<!-- Convention End-->
+
+
+
+<!--
+
+<section class="key_hsection pt-100 pb-70 "   style="background-image: url(https://www.ltsu.ac.in/assets/frontend/images/4940019.jpg); background-size: cover; background-attachment: fixed; background-size: cover; background-attachment: fixed;">
+		<div class="container">
+		<div class="row">
+      <div class="col-lg-12">
+       <div class="section-title">
+      <h2 style="color:#285476;font-size:36px; font-family:"Roboto Slab", serif;"><i class="fa fa-hand-o-down" aria-hidden="true"></i> Key Highlights Include</h2>
+    </div>
+        
+      </div>
+      </div>
+      <div class="row justify-content-center">
+      	<div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Inauguration of the Centre for Future Skills</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Keynote Address</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Vice-Chancellors' Conclave</h3>
+                </div>
+            </div>
+        </div>
+    
+      	<div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Faculty Conclave</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Students' Conclave</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="key_box">
+              <div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                  <h3> Principals’ Conclave</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>Projects, Industry and Publication exhibitions</h3>
+                </div>
+            </div>
+        </div>
+     
+      	<div class="col-md-4">
+        	<div class="key_box">
+            	<div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                	<h3>A grand cultural evening celebrating India's diversity</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="key_box">
+              <div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                  <h3><a href="https://www.ltsu.ac.in/ideathon2025">Ideathon</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="key_box">
+              <div class="key_icon">
+                
+                </div>
+                <div class="key_content">
+                  <h3><a href="https://www.ltsu.ac.in/yuva">Skill Based Competitions</a></h3>
+                </div>
+            </div>
+        </div>
+
+
+
+       
+      </div>
+ 		
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+            <div class="interrr jjj text-center">
+              <p>With the <strog>Honorable Governor of Punjab as Chief Guest</strog>, the convention sets the stage for meaningful collaboration and dialogue, aiming to inspire actionable insights and foster academic-industry synergies. The event is dedicated to building a skilled, resilient workforce and empowering India to achieve its Vision 2047 of becoming the global hub of excellence in skilled workforce.</p>
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+ Highlights End-->
+
+
+
+
+
+
+<!--   Themes for Different Conclaves START 
+
+<div class="campus-life-area ptb-100 bg-f4f6f9" style=" background-image: url(https://www.ltsu.ac.in/assets/frontend/images/testimo.png);;">
+  <div class="container">
+    <div class="section-title">
+      <h2 style="color:#285476;font-size:36px; font-family:'Roboto Slab', serif;">Themes for Different Conclaves</h2>
+    </div>
+        <div class="row justify-content-center ">    
+          <div class="col-lg-12 col-md-12"> 
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="padding-top: 44px;
+                padding-bottom: 50px;"> 
+
+
+
+
+
+
+
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" data-bs-parent="#accordionPanelsStayOpenExample"> Vice-Chancellors' Conclave </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <h5>Theme:</h5>
+        <p>Reversing the Tide by Indian Universities: Brain Drain to Brain Exchange for Global Workforce Development</p>
+        <h5>Tagline:</h5>
+        <p>"Innovation with Strategic Collaborations"</p>
+        <h5>Brief:</h5>
+        <p>This conclave is powered by <strong>IBM</strong> and focuses on how Indian universities can contribute on creating supply line of global talent pool by fostering innovation, promoting brain exchange programs and establishing strategic collaborations. The discussions will aim to identify actionable solutions for transforming Indian institutions into global centers of excellence.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" data-bs-parent="#accordionPanelsStayOpenExample"> Faculty Conclave </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <h5>Theme:</h5>
+        <p>Empowering Communities: Interdisciplinary Education for Sustainable Development</p>
+        <h5>Tagline:</h5>
+        <p>"Building skills, empowering lives, driving progress."</p>
+        <h5>Brief:</h5>
+        <p> As a part of Faculty Conclave a National Conference will be organised on "Empowering Communities: Interdisciplinary Education for Sustainable Development" with the aims to bring together academicians, researchers, and thought leaders to delve into the transformative potential of interdisciplinary education in addressing pressing societal challenges. Faculty members will share insights, engage in thought-provoking discussions, and set the foundation for progressive education practices.</p>
+        <p>Tracks for Research Paper Presentation: Healthcare, Renewable Energy, Emerging Technologies and Sustainable Development</p>
+        <h5>SPECIAL HIGHLIGHT</h5>
+        <p>An exclusive interactive session with the Honorable Governor of Punjab will provide attendees with an opportunity to gain valuable perspectives on the role of education in empowering communities and driving progress in alignment with national development objectives.</p>
+        <br>
+        <a href="https://www.ltsu.ac.in/assets/frontend/images/faculty_conference.jpeg"  target="_blank" class="btn btn-primary">Dowonload Brochure<i class="fa fa-arrow-circle-o-right"></i></a> <a href="https://forms.gle/PSRNGF97kjQagqES6"  target="_blank" class="btn btn-primary">Register Now <i class="fa fa-arrow-circle-o-right"></i></a>
+        <p><br>
+        </p>
+        <p style="text-align:center"><img alt="" src="https://www.ltsu.ac.in/assets/frontend/images/faculty_conference.jpeg" width="996" /></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" data-bs-parent="#accordionPanelsStayOpenExample"> Students' Conclave </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <h5>Theme:</h5>
+        <p>Skill Development for a Resilient Nation</p>
+        <h5>Tagline:</h5>
+        <p>"Strong skills, stronger nation."</p>
+        <h5>Brief:</h5>
+        <p>As part of Conclave a National Conference on "Skill Development for a Resilient Nation", aims to bring together bright students from diverse disciplines to exchange ideas, showcase innovative solutions, and contribute to nation-building. </p>
+        <p>Tracks for Research Poster Presentation: Healthcare, Renewable Energy, Emerging Technologies and Sustainable Development</p>
+        <h5>SPECIAL HIGHLIGHT</h5>
+        <p>Inspirational Session with Honourable Governor of Punjab: The selected students will be provided a unique opportunity to engage in meaningful discussions on the above mentioned theme with the Honourable Governor of Punjab, sharing ideas and gaining insights. This 
+          conclave is a step toward inspiring future leaders and building a nation with strong skills and a stronger future.</p>
+        <a href="https://www.ltsu.ac.in/assets/frontend/images/student_conference.jpg"  target="_blank" class="btn btn-primary">Dowonload Brochure<i class="fa fa-arrow-circle-o-right"></i></a> <a href="https://forms.gle/Ty226KJ3egkdUDt1A"  target="_blank" class="btn btn-primary">Register Now <i class="fa fa-arrow-circle-o-right"></i></a>
+        <p><br>
+        </p>
+        <p style="text-align:center"><img alt="" src="https://www.ltsu.ac.in/assets/frontend/images/student_conference.jpg" width="996" /></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item"  id="vcc" >
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    Vice-Chancellors' Conclave 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h5>Theme:</h5>
+        <p>Reversing the Tide by Indian Universities: Brain Drain to Brain Exchange for Global Workforce Development</p>
+        <h5>Tagline:</h5>
+        <p>"Innovation with Strategic Collaborations"</p>
+        <h5>Brief:</h5>
+        <p>This conclave is powered by <strong>IBM</strong> and focuses on how Indian universities can contribute on creating supply line of global talent pool by fostering innovation, promoting brain exchange programs and establishing strategic collaborations. The discussions will aim to identify actionable solutions for transforming Indian institutions into global centers of excellence.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item"  id="faccon">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+   Faculty Conclave 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body" >
+        <h5>Theme:</h5>
+        <p>Empowering Communities: Interdisciplinary Education for Sustainable Development</p>
+        <h5>Tagline:</h5>
+        <p>"Building skills, empowering lives, driving progress."</p>
+        <h5>Brief:</h5>
+        <p> As a part of Faculty Conclave a National Conference will be organised on "Empowering Communities: Interdisciplinary Education for Sustainable Development" with the aims to bring together academicians, researchers, and thought leaders to delve into the transformative potential of interdisciplinary education in addressing pressing societal challenges. Faculty members will share insights, engage in thought-provoking discussions, and set the foundation for progressive education practices.</p>
+        <p>Tracks for Research Paper Presentation: Healthcare, Renewable Energy, Emerging Technologies and Sustainable Development</p>
+        <h5>SPECIAL HIGHLIGHT</h5>
+        <p>An exclusive interactive session with the Honorable Governor of Punjab will provide attendees with an opportunity to gain valuable perspectives on the role of education in empowering communities and driving progress in alignment with national development objectives.</p>
+        <br>
+        <a href="https://www.ltsu.ac.in/assets/frontend/images/faculty_conference.jpeg"  target="_blank" class="btn btn-primary">Dowonload Brochure<i class="fa fa-arrow-circle-o-right"></i></a> <a href="https://forms.gle/PSRNGF97kjQagqES6"  target="_blank" class="btn btn-primary">Register Now <i class="fa fa-arrow-circle-o-right"></i></a>
+        <p><br>
+        </p>
+        <p style="text-align:center"><img alt="" src="https://www.ltsu.ac.in/assets/frontend/images/faculty_conference.jpg" width="996" /></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item"  id="stucon" >
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Students' Conclave
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" >
+        <h5>Theme:</h5>
+        <p>Skill Development for a Resilient Nation</p>
+        <h5>Tagline:</h5>
+        <p>"Strong skills, stronger nation."</p>
+        <h5>Brief:</h5>
+        <p>As part of Conclave a National Conference on "Skill Development for a Resilient Nation", aims to bring together bright students from diverse disciplines to exchange ideas, showcase innovative solutions, and contribute to nation-building. </p>
+        <p>Tracks for Research Poster Presentation: Healthcare, Renewable Energy, Emerging Technologies and Sustainable Development</p>
+        <h5>SPECIAL HIGHLIGHT</h5>
+        <p>Inspirational Session with Honourable Governor of Punjab: The selected students will be provided a unique opportunity to engage in meaningful discussions on the above mentioned theme with the Honourable Governor of Punjab, sharing ideas and gaining insights. This 
+          conclave is a step toward inspiring future leaders and building a nation with strong skills and a stronger future.</p>
+        <a href="https://www.ltsu.ac.in/assets/frontend/images/student_conf
+            .jpg"  target="_blank" class="btn btn-primary">Dowonload Brochure<i class="fa fa-arrow-circle-o-right"></i></a> <a href="https://forms.gle/Ty226KJ3egkdUDt1A"  target="_blank" class="btn btn-primary">Register Now <i class="fa fa-arrow-circle-o-right"></i></a>
+        <p><br>
+        </p>
+        <p style="text-align:center"><img alt="" src="https://www.ltsu.ac.in/assets/frontend/images/student_conference.jpg" width="996" /></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+ <section class="custom_slidesection">
+ 	<div class="container">
+    	<div class="section-title">
+      <h2 style="color:#285476;font-size:36px; font-family:'Roboto Slab', serif;">Tour to Punjab</h2>
+    </div>
+
+    		<div class="row">
+        <div class="col-md-12">
+        	<div class="custom-slider owl-carousel owl-theme">
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/virasa_ekhalsa.png" alt="Virasat-e-Khalsa"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Virasat-e-Khalsa</h3>
+          </div>
+      </div>
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/bhakra-dam.png" alt="bhakra-dam"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Bhakra Dam Nangal</h3>
+          </div>
+      </div>
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/keshgarh-sahib.png" alt="keshgarh-sahib"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Takht Sri Kesgarh Sahib, Anandpur Sahib</h3>
+          </div>
+      </div>
+
+
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/sri-darbar-sahib.png" alt="Sri-Darbar-Sahib"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Sri Darbar Sahib, Amritsar</h3>
+          </div>
+      </div>
+
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/rock-garden.png" alt="rock-garden"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Rock Gardan, Chandigarh</h3>
+          </div>
+      </div>
+
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/BIRD-PARK.png" alt="rock-garden"></a> </div>
+        <div class="custom_slcontent">
+          <h3> Bird Park, Chandigarh</h3>
+          </div>
+      </div>
+
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/wagah-attari.png" alt="Wagah-Attari"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Wagah-Attari Border, Amritsar</h3>
+          </div>
+      </div>
+
+      <div class="single-custom-card style2">
+        <div class="custom-slmg"><img src="https://www.ltsu.ac.in/assets/frontend/images/MUSEUM-ROPAR.png" alt="Wagah-Attari"></a> </div>
+        <div class="custom_slcontent">
+          <h3>Museum, Ropar</h3>
+          </div>
+      </div>
+
+
+    </div>
+        </div>	
+        </div>
+    </div>
+ </section> 
+ <section class="contactno_section">
+<div class="container" id="coe">
+  <div class="row justify-content-center align-items-center"  data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true" style="background:white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; border: 1px solid #dddddd; color: black;   width: 100%; padding: 27px;" >
+
+
+    <div class="col-lg-4">
+      <div class="our-misss three-1">
+        <h3>FOR GENERAL ENQUIRIES</h3>
+        <ul class="swwwww">
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p>+91 98759 44904</p>
+        </li>
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p>+91 94780 61190</p>
+        </li>
+        </ul>
+      </div>
+</div>
+
+
+
+
+<div class="col-lg-4">
+      <div class="our-misss three-1">
+        <h3>FOR ACCOMODATION</h3>
+        <ul class="swwwww">
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p>+91 95017 88865</p>
+        </li>
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p>+91 98829 88354</p>
+        </li>
+
+        </ul>
+      </div>
+</div>
+
+<div class="col-lg-4">
+      <div class="our-misss three-1">
+        <h3>FOR RESEARCH PAPER & POSTERS</h3>
+        <ul class="swwwww">
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p> +91 83608 05251</p>
+        </li>
+        <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          <p>+91 88725-91468</p>
+        </li>
+
+        </ul>
+      </div>
+</div>
+
+</div>
+</div>
+</section>
+-->
+
+
+
+<div class="footer-area pt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-sm-6">
+        <div class="footer-widjet">
+          <h3>Quick Links</h3>
+          <div class="list">
+            <ul>
+              <li><a href="../ltsu.ac.in/index.html">- Home </a></li>
+              <li><a href="about-ltsu.html">- About Us </a></li>
+              <li><a href="gov-projs.html">- Govt. Funded Projects</a></li>
+              <!-- <li><a href="https://www.ltsu.ac.in/registration-for-ibm-courses">- Registration for IBM </a></li> -->
+              <li><a href="events.html">- Events </a></li>
+              <li><a href="blog/index.html"  target="_blank">- <b style="color:#fffc00">Blog </b></a></li>    
+              <li><a href="academic-facilities.html">- Academic Facilities</a></li>
+              <li><a href="job-opportunities.html">- Careers</a></li>
+              <li><a href="../esanad.nic.in/index.html"  target="_blank">- e-Sanad</a></li>
+              <li><a href="contact-us.html">- Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widjet">
+         <h3>Portal Link</h3>
+          <div class="list">
+            <ul>
+              <li><a href="../erp.ltsu.in/student-portal/login.html"  target="_blank">- Student Login </a></li>
+               <li><a href="../erp.ltsu.in/index.html"  target="_blank">- Faculty Login </a></li>
+          <li><a href="../app.jodo.in/lamrin/login.html"  target="_blank">- Online Payment Portal</a></li>
+       		 <li><a href="privacy-policy.html">- Privacy Policy</a></li>
+           <li><a href="terms-and-conditions.html">- Terms and Conditions</a></li>
+              <li><a href="important-links.html">- Important Links</a></li>
+              <li><a href="esanad.html">- eSanad</a></li>
+              
+              
+              
+<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+              
+            </ul>
+          </div>
+          <br />
+
+           <h3>Change Language</h3>
+          <div id="google_translate_element"></div> <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+          
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widjet">
+          <h3>Our Location</h3>
+          <div class="list">
+            <iframe
+                            src="../www.google.com/maps/embedcd3d.html?pb=!1m14!1m8!1m3!1d437791.17190018087!2d76.477097!3d30.991586000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905550dacb273c7%3A0x6962bc698f1ce7fd!2sLamrin%20Tech%20Skills%20University!5e0!3m2!1sen!2sus!4v1699092769906!5m2!1sen!2sus"
+                            width="100%"
+                            height="290"
+                            style="border: 0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="footer-widjet mr-70">
+          <h3>Contact Us</h3>
+          <div class="list">
+            <ul class="contactus-">
+              <li> <i class="fa fa-map-marker"></i><strong> Lamrin Tech Skills University Punjab</strong><br />
+                near Rupnagar (Ropar) <br>40 min drive from Chandigarh & 6 KM drive from Ropar on Chandigarh – Jalandhar National Highway 
+                (NH 344A), Rupnagar (Ropar) District: SBS Nagar, Punjab, India, PIN: 144533 </li>
+              <li> <i class="fa fa-user" aria-hidden="true"></i> 
+
+             <!--   <b>General Enquiry:-</b> <a href="tel:+918588862034">+91 8588862034 </a><br /> -->
+                <b style="color:#fffc00">Admission Enquiry :-</b> <a href="tel:+918480005390" style="color:#fffc00">+91 8480005390 </a></strong><br/>
+                <b>Landline:-</b> <a href="tel:01881270794">01881-270794, 270693</a><br />
+                <b>For Industry integrated B.Tech. CSE:-</b><br> <a href="tel:+919501012152">+91 9501012152</a></li>
+              <li><i class="fa fa-envelope-o"></i><a href="mailto:admission.btech@ltsu.ac.in">admission.btech@ltsu.ac.in</a></li>
+               
+              <li><i class="fa fa-envelope-o"></i><a href="mailto:admissions@ltsu.ac.in">admissions@ltsu.ac.in </a></li>
+
+              
+              <li><i class="fa fa-globe"></i><a href="../ltsu.ac.in/index.html">www.ltsu.ac.in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="copyright-area">
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-lg-9 col-md-9">
+          <div class="copy">
+            <p>Copyright © 2025 Lamrin Tech Skills University Punjab, Ropar. All Rights Reserved. Website Designed By <a href="../www.inkwebsolutions.com/index.html"><strong>Ink Web Solutions</strong></a></p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 text-center">
+          <div class="social-content">
+            <ul>
+              <li><span>Follow Us On</span></li>
+              <li> <a href="../www.facebook.com/lamrintechuniv/index.html" target="_blank"><i class="ri-facebook-fill"></i></a> </li>
+              <li> <a href="../x.com/lamrinuniv.html" target="_blank"><i class="ri-twitter-fill"></i></a> </li>
+              <li> <a href="../www.instagram.com/lamrintechskillsuniversity/index.html" target="_blank"><i class="ri-instagram-line"></i></a> </li>
+              <li> <a href="../www.linkedin.com/uas/login5b0c.html" target="_blank"><i class="ri-linkedin-fill"></i></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="go-top"> <i class="fa fa-caret-up" aria-hidden="true"></i> <i class="fa fa-caret-up" aria-hidden="true"></i> </div>
+<script src="assets/frontend/js/jquery.min.html"></script> 
+<script src="assets/frontend/js/bootstrap.bundle.min.html"></script> 
+<script src="assets/frontend/js/jquery.meanmenu.html"></script> 
+<script src="assets/frontend/js/owl.carousel.min.html"></script> 
+<script src="assets/frontend/js/carousel-thumbs.min.html"></script> 
+<script src="assets/frontend/js/jquery.magnific-popup.html"></script> 
+<script src="assets/frontend/js/aos.html"></script> 
+<script src="assets/frontend/js/odometer.min.html"></script> 
+<script src="assets/frontend/js/appear.min.html"></script> 
+<script src="assets/frontend/js/form-validator.min.js"></script> 
+<script src="assets/frontend/js/contact-form-script.js"></script> 
+<script src="assets/frontend/js/ajaxchimp.min.html"></script> 
+<script src="assets/frontend/js/custom.html"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.ltsu.ac.in/leadership-team by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2026 13:40:24 GMT -->
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH/Views/frontend/leadership-team.php -->

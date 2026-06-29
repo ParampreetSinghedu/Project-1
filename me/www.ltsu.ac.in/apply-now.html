@@ -1,0 +1,716 @@
+<!-- DEBUG-VIEW START 1 APPPATH/Views/frontend/apply-now.php -->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from www.ltsu.ac.in/apply-now by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2026 13:40:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script type="text/javascript" nonce="4aadba886e45f54e7dddd845" id="debugbar_loader" data-time="1782739878.291152" src="index0880.html?debugbar"></script><script type="text/javascript" nonce="4aadba886e45f54e7dddd845" id="debugbar_dynamic_script"></script><style type="text/css" nonce="ace348dc0fa02bdeb507cc06" id="debugbar_dynamic_style"></style><script class="kint-rich-script" nonce="4aadba886e45f54e7dddd845">void 0===window.kintShared&&(window.kintShared=function(){"use strict";var e={dedupe:function(e,n){return[].forEach.call(document.querySelectorAll(e),function(e){e!==(n=!n||!n.ownerDocument.contains(n)?e:n)&&e.parentNode.removeChild(e)}),n},runOnce:function(e){"complete"===document.readyState?e():window.addEventListener("load",e)}};return window.addEventListener("click",function(e){var n;e.target.classList.contains("kint-ide-link")&&((n=new XMLHttpRequest).open("../ltsu.ac.in/GET.html",e.target.href),n.send(null),e.preventDefault())}),e}());
+void 0===window.kintRich&&(window.kintRich=function(){"use strict";var l={selectText:function(e){var t=window.getSelection(),a=document.createRange();a.selectNodeContents(e),t.removeAllRanges(),t.addRange(a)},toggle:function(e,t){var a=l.getChildren(e);a&&(e.classList.toggle("kint-show",t),1===a.childNodes.length&&(a=a.childNodes[0].childNodes[0])&&a.classList&&a.classList.contains("kint-parent")&&l.toggle(a,t))},toggleChildren:function(e,t){var a=l.getChildren(e);if(a){var o=a.getElementsByClassName("kint-parent"),n=o.length;for(void 0===t&&(t=e.classList.contains("kint-show"));n--;)l.toggle(o[n],t)}},switchTab:function(e){var t=e.previousSibling,a=0;for(e.parentNode.getElementsByClassName("kint-active-tab")[0].classList.remove("kint-active-tab"),e.classList.add("kint-active-tab");t;)1===t.nodeType&&a++,t=t.previousSibling;for(var o=e.parentNode.nextSibling.childNodes,n=0;n<o.length;n++)n===a?(o[n].classList.add("kint-show"),1===o[n].childNodes.length&&(t=o[n].childNodes[0].childNodes[0])&&t.classList&&t.classList.contains("kint-parent")&&l.toggle(t,!0)):o[n].classList.remove("kint-show")},mktag:function(e){return"<"+e+">"},openInNewWindow:function(e){var t=window.open();t&&(t.document.open(),t.document.write(l.mktag("html")+l.mktag("head")+l.mktag("title")+"Kint ("+(new Date).toISOString()+")"+l.mktag("/title")+l.mktag('meta charset="utf-8"')+l.mktag('script class="kint-rich-script" nonce="'+l.script.nonce+'"')+l.script.innerHTML+l.mktag("/script")+l.mktag('style class="kint-rich-style" nonce="'+l.style.nonce+'"')+l.style.innerHTML+l.mktag("/style")+l.mktag("/head")+l.mktag("body")+'<input class="kint-note-input" placeholder="Take some notes!"><div class="kint-rich">'+e.parentNode.outerHTML+"</div>"+l.mktag("/body")),t.document.close())},sortTable:function(e,a){var t=e.tBodies[0];[].slice.call(e.tBodies[0].rows).sort(function(e,t){if(e=e.cells[a].textContent.trim().toLocaleLowerCase(),t=t.cells[a].textContent.trim().toLocaleLowerCase(),isNaN(e)||isNaN(t)){if(isNaN(e)&&!isNaN(t))return 1;if(isNaN(t)&&!isNaN(e))return-1}else e=parseFloat(e),t=parseFloat(t);return e<t?-1:t<e?1:0}).forEach(function(e){t.appendChild(e)})},showAccessPath:function(e){for(var t=e.childNodes,a=0;a<t.length;a++)if(t[a].classList&&t[a].classList.contains("access-path"))return t[a].classList.toggle("kint-show"),void(t[a].classList.contains("kint-show")&&l.selectText(t[a]))},showSearchBox:function(e){var t=e.querySelector(".kint-search");t&&(t.classList.toggle("kint-show"),t.classList.contains("kint-show")?(e.classList.add("kint-show"),t.focus(),t.select(),l.search(e.parentNode,t.value)):e.parentNode.classList.remove("kint-search-root"))},search:function(e,t){e.querySelectorAll(".kint-search-match").forEach(function(e){e.classList.remove("kint-search-match")}),e.classList.remove("kint-search-match"),e.classList.toggle("kint-search-root",t.length),t.length&&l.findMatches(e,t)},findMatches:function(e,t){var a,o,n,r=e.cloneNode(!0);if(r.querySelectorAll(".access-path").forEach(function(e){e.remove()}),-1!=r.textContent.toUpperCase().indexOf(t.toUpperCase())){for(s in e.classList.add("kint-search-match"),e.childNodes)if("DD"==e.childNodes[s].tagName){a=e.childNodes[s];break}if(a)if([].forEach.call(a.childNodes,function(e){"DL"==e.tagName?l.findMatches(e,t):"UL"==e.tagName&&(e.classList.contains("kint-tabs")?o=e.childNodes:e.classList.contains("kint-tab-contents")&&(n=e.childNodes))}),o&&n&&o.length==n.length)for(var s=0;s<o.length;s++){var i=!1;-1!=o[s].textContent.toUpperCase().indexOf(t.toUpperCase())?i=!0:((r=n[s].cloneNode(!0)).querySelectorAll(".access-path").forEach(function(e){e.remove()}),-1!=r.textContent.toUpperCase().indexOf(t.toUpperCase())&&(i=!0)),i&&(o[s].classList.add("kint-search-match"),[].forEach.call(n[s].childNodes,function(e){"DL"==e.tagName&&l.findMatches(e,t)}))}}},getParentByClass:function(e,t){for(;(e=e.parentNode)&&e.classList&&!e.classList.contains(t););return e},getParentHeader:function(e,t){for(var a=e.nodeName.toLowerCase();"dd"!==a&&"dt"!==a&&l.getParentByClass(e,"kint-rich");)a=(e=e.parentNode).nodeName.toLowerCase();return l.getParentByClass(e,"kint-rich")?(e="dd"===a&&t?e.previousElementSibling:e)&&"dt"===e.nodeName.toLowerCase()&&e.classList.contains("kint-parent")?e:void 0:null},getChildren:function(e){for(;(e=e.nextElementSibling)&&"dd"!==e.nodeName.toLowerCase(););return e},isFolderOpen:function(){if(l.folder&&l.folder.querySelector("dd.kint-foldout"))return l.folder.querySelector("dd.kint-foldout").previousSibling.classList.contains("kint-show")},initLoad:function(){l.style=window.kintShared.dedupe("style.kint-rich-style",l.style),l.script=window.kintShared.dedupe("script.kint-rich-script",l.script),l.folder=window.kintShared.dedupe(".kint-rich.kint-folder",l.folder);var t,e=document.querySelectorAll("input.kint-search");[].forEach.call(e,function(t){function e(e){window.clearTimeout(a),t.value!==o&&(a=window.setTimeout(function(){o=t.value,l.search(t.parentNode.parentNode,o)},500))}var a=null,o=null;t.removeEventListener("keyup",e),t.addEventListener("keyup",e)}),l.folder&&(t=l.folder.querySelector("dd"),[].forEach.call(document.querySelectorAll(".kint-rich.kint-file"),function(e){e.parentNode!==l.folder&&t.appendChild(e)}),document.body.appendChild(l.folder),l.folder.classList.add("kint-show"))},keyboardNav:{targets:[],target:0,active:!1,fetchTargets:function(){var e=l.keyboardNav.targets[l.keyboardNav.target];l.keyboardNav.targets=[],document.querySelectorAll(".kint-rich nav, .kint-tabs>li:not(.kint-active-tab)").forEach(function(e){l.isFolderOpen()&&!l.folder.contains(e)||0===e.offsetWidth&&0===e.offsetHeight||l.keyboardNav.targets.push(e)}),e&&-1!==l.keyboardNav.targets.indexOf(e)&&(l.keyboardNav.target=l.keyboardNav.targets.indexOf(e))},sync:function(e){var t=document.querySelector(".kint-focused");t&&t.classList.remove("kint-focused"),l.keyboardNav.active&&((t=l.keyboardNav.targets[l.keyboardNav.target]).classList.add("kint-focused"),e||l.keyboardNav.scroll(t))},scroll:function(e){var t,a;e!==l.folder.querySelector("dt > nav")&&(a=(t=function(e){return e.offsetTop+(e.offsetParent?t(e.offsetParent):0)})(e),l.isFolderOpen()?(e=l.folder.querySelector("dd.kint-foldout")).scrollTo(0,a-e.clientHeight/2):window.scrollTo(0,a-window.innerHeight/2))},moveCursor:function(e){for(l.keyboardNav.target+=e;l.keyboardNav.target<0;)l.keyboardNav.target+=l.keyboardNav.targets.length;for(;l.keyboardNav.target>=l.keyboardNav.targets.length;)l.keyboardNav.target-=l.keyboardNav.targets.length;l.keyboardNav.sync()},setCursor:function(e){if(l.isFolderOpen()&&!l.folder.contains(e))return!1;l.keyboardNav.fetchTargets();for(var t=0;t<l.keyboardNav.targets.length;t++)if(e===l.keyboardNav.targets[t])return l.keyboardNav.target=t,!0;return!1}},mouseNav:{lastClickTarget:null,lastClickTimer:null,lastClickCount:0,renewLastClick:function(){window.clearTimeout(l.mouseNav.lastClickTimer),l.mouseNav.lastClickTimer=window.setTimeout(function(){l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickTimer=null,l.mouseNav.lastClickCount=0},250)}},style:null,script:null,folder:null};return window.addEventListener("click",function(e){var t=e.target;if(l.mouseNav.lastClickTarget&&l.mouseNav.lastClickTimer&&l.mouseNav.lastClickCount)if(t=l.mouseNav.lastClickTarget,1===l.mouseNav.lastClickCount)l.toggleChildren(t.parentNode),l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),l.mouseNav.lastClickCount++,l.mouseNav.renewLastClick();else{for(var a=t.parentNode.classList.contains("kint-show"),o=document.getElementsByClassName("kint-parent"),n=o.length;n--;)l.toggle(o[n],a);l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),l.keyboardNav.scroll(t),window.clearTimeout(l.mouseNav.lastClickTimer),l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickTarget=null,l.mouseNav.lastClickCount=0}else if(l.getParentByClass(t,"kint-rich")){var r=t.nodeName.toLowerCase();if("dfn"===r&&l.selectText(t),"th"!==r)if((t=l.getParentHeader(t))&&(l.keyboardNav.setCursor(t.querySelector("nav")),l.keyboardNav.sync(!0)),t=e.target,"li"===r&&"kint-tabs"===t.parentNode.className)"kint-active-tab"!==t.className&&l.switchTab(t),(t=l.getParentHeader(t,!0))&&(l.keyboardNav.setCursor(t.querySelector("nav")),l.keyboardNav.sync(!0));else if("nav"===r)"footer"===t.parentNode.nodeName.toLowerCase()?(l.keyboardNav.setCursor(t),l.keyboardNav.sync(!0),(t=t.parentNode).classList.toggle("kint-show")):(l.toggle(t.parentNode),l.keyboardNav.fetchTargets(),l.mouseNav.lastClickCount=1,l.mouseNav.lastClickTarget=t,l.mouseNav.renewLastClick());else if(t.classList.contains("kint-popup-trigger")){var s=t.parentNode;if("footer"===s.nodeName.toLowerCase())s=s.previousSibling;else for(;s&&!s.classList.contains("kint-parent");)s=s.parentNode;l.openInNewWindow(s)}else t.classList.contains("kint-access-path-trigger")?l.showAccessPath(t.parentNode):t.classList.contains("kint-search-trigger")?l.showSearchBox(t.parentNode):t.classList.contains("kint-search")||("pre"===r&&3===e.detail?l.selectText(t):l.getParentByClass(t,"kint-source")&&3===e.detail?l.selectText(l.getParentByClass(t,"kint-source")):t.classList.contains("access-path")?l.selectText(t):"a"!==r&&(t=l.getParentHeader(t))&&(l.toggle(t),l.keyboardNav.fetchTargets()));else e.ctrlKey||l.sortTable(t.parentNode.parentNode.parentNode,t.cellIndex)}},!0),window.addEventListener("keydown",function(e){if(e.target===document.body&&!e.altKey&&!e.ctrlKey){if(68===e.keyCode){if(l.keyboardNav.active)l.keyboardNav.active=!1;else if(l.keyboardNav.active=!0,l.keyboardNav.fetchTargets(),0===l.keyboardNav.targets.length)return void(l.keyboardNav.active=!1);return l.keyboardNav.sync(),void e.preventDefault()}if(l.keyboardNav.active){if(9===e.keyCode)return l.keyboardNav.moveCursor(e.shiftKey?-1:1),void e.preventDefault();if(38===e.keyCode||75===e.keyCode)return l.keyboardNav.moveCursor(-1),void e.preventDefault();if(40===e.keyCode||74===e.keyCode)return l.keyboardNav.moveCursor(1),void e.preventDefault();var t,a,o=l.keyboardNav.targets[l.keyboardNav.target];if("li"===o.nodeName.toLowerCase()){if(32===e.keyCode||13===e.keyCode)return l.switchTab(o),l.keyboardNav.fetchTargets(),l.keyboardNav.sync(),void e.preventDefault();if(39===e.keyCode||76===e.keyCode)return l.keyboardNav.moveCursor(1),void e.preventDefault();if(37===e.keyCode||72===e.keyCode)return l.keyboardNav.moveCursor(-1),void e.preventDefault()}o=o.parentNode,65===e.keyCode?(l.showAccessPath(o),e.preventDefault()):"footer"===o.nodeName.toLowerCase()&&o.parentNode.classList.contains("kint-rich")?32===e.keyCode||13===e.keyCode?(o.classList.toggle("kint-show"),e.preventDefault()):37===e.keyCode||72===e.keyCode?(o.classList.remove("kint-show"),e.preventDefault()):39!==e.keyCode&&76!==e.keyCode||(o.classList.add("kint-show"),e.preventDefault()):32===e.keyCode||13===e.keyCode?(l.toggle(o),l.keyboardNav.fetchTargets(),e.preventDefault()):39!==e.keyCode&&76!==e.keyCode&&37!==e.keyCode&&72!==e.keyCode||(t=39===e.keyCode||76===e.keyCode,o.classList.contains("kint-show")?l.toggleChildren(o,t):t||(a=l.getParentHeader(o.parentNode.parentNode,!0))&&(l.keyboardNav.setCursor((o=a).querySelector("nav")),l.keyboardNav.sync()),l.toggle(o,t),l.keyboardNav.fetchTargets(),e.preventDefault())}}},!0),l}()),window.kintShared.runOnce(window.kintRich.initLoad);
+void 0===window.kintMicrotimeInitialized&&(window.kintMicrotimeInitialized=1,window.addEventListener("load",function(){"use strict";var a={},t=Array.prototype.slice.call(document.querySelectorAll("[data-kint-microtime-group]"),0);t.forEach(function(t){var i,e;t.querySelector(".kint-microtime-lap")&&(i=t.getAttribute("data-kint-microtime-group"),e=parseFloat(t.querySelector(".kint-microtime-lap").innerHTML),t=parseFloat(t.querySelector(".kint-microtime-avg").innerHTML),void 0===a[i]&&(a[i]={}),(void 0===a[i].min||a[i].min>e)&&(a[i].min=e),(void 0===a[i].max||a[i].max<e)&&(a[i].max=e),a[i].avg=t)}),t.forEach(function(t){var i,e,r,o,n=t.querySelector(".kint-microtime-lap");null!==n&&(i=parseFloat(n.textContent),o=t.dataset.kintMicrotimeGroup,e=a[o].avg,r=a[o].max,o=a[o].min,i===(t.querySelector(".kint-microtime-avg").textContent=e)&&i===o&&i===r||(n.style.background=e<i?"hsl("+(40-40*((i-e)/(r-e)))+", 100%, 65%)":"hsl("+(40+80*(e===o?0:(e-i)/(e-o)))+", 100%, 65%)"))})}));
+</script><style class="kint-rich-style" nonce="ace348dc0fa02bdeb507cc06">.kint-rich{font-size:13px;overflow-x:auto;white-space:nowrap;background:rgba(255,255,255,0.9)}.kint-rich.kint-folder{position:fixed;bottom:0;left:0;right:0;z-index:999999;width:100%;margin:0;display:block}.kint-rich.kint-folder dd.kint-foldout{max-height:calc(100vh - 100px);padding-right:8px;overflow-y:scroll;display:none}.kint-rich.kint-folder dd.kint-foldout.kint-show{display:block}.kint-rich::selection,.kint-rich::-moz-selection,.kint-rich::-webkit-selection{background:#aaa;color:#1d1e1e}.kint-rich .kint-focused{box-shadow:0 0 3px 2px red}.kint-rich,.kint-rich::before,.kint-rich::after,.kint-rich *,.kint-rich *::before,.kint-rich *::after{box-sizing:border-box;border-radius:0;color:#1d1e1e;float:none !important;font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;line-height:15px;margin:0;padding:0;text-align:left}.kint-rich{margin:8px 0}.kint-rich dt,.kint-rich dl{width:auto}.kint-rich dt,.kint-rich div.access-path{background:#f8f8f8;border:1px solid #d7d7d7;color:#1d1e1e;display:block;font-weight:bold;list-style:none outside none;overflow:auto;padding:4px}.kint-rich dt:hover,.kint-rich div.access-path:hover{border-color:#aaa}.kint-rich>dl dl{padding:0 0 0 12px}.kint-rich dt.kint-parent>nav,.kint-rich>footer>nav{background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAxNTAiPjxwYXRoIGQ9Ik02IDdoMThsLTkgMTV6bTAgMzBoMThsLTkgMTV6bTAgNDVoMThsLTktMTV6bTAgMzBoMThsLTktMTV6bTAgMTJsMTggMThtLTE4IDBsMTgtMTgiIGZpbGw9IiM1NTUiLz48cGF0aCBkPSJNNiAxMjZsMTggMThtLTE4IDBsMTgtMTgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjNTU1Ii8+PC9zdmc+") no-repeat scroll 0 0/15px 75px transparent;cursor:pointer;display:inline-block;height:15px;width:15px;margin-right:3px;vertical-align:middle}.kint-rich dt.kint-parent:hover>nav,.kint-rich>footer>nav:hover{background-position:0 25%}.kint-rich dt.kint-parent.kint-show>nav,.kint-rich>footer.kint-show>nav{background-position:0 50%}.kint-rich dt.kint-parent.kint-show:hover>nav,.kint-rich>footer.kint-show>nav:hover{background-position:0 75%}.kint-rich dt.kint-parent.kint-locked>nav{background-position:0 100%}.kint-rich dt.kint-parent+dd{display:none;border-left:1px dashed #d7d7d7}.kint-rich dt.kint-parent.kint-show+dd{display:block}.kint-rich var,.kint-rich var a{color:#06f;font-style:normal}.kint-rich dt:hover var,.kint-rich dt:hover var a{color:red}.kint-rich dfn{font-style:normal;font-family:monospace;color:#1d1e1e}.kint-rich pre{color:#1d1e1e;margin:0 0 0 12px;padding:5px;overflow-y:hidden;border-top:0;border:1px solid #d7d7d7;background:#f8f8f8;display:block;word-break:normal}.kint-rich .kint-popup-trigger,.kint-rich .kint-access-path-trigger,.kint-rich .kint-search-trigger{background:rgba(29,30,30,0.8);border-radius:3px;height:16px;font-size:16px;margin-left:5px;font-weight:bold;width:16px;text-align:center;float:right !important;cursor:pointer;color:#f8f8f8;position:relative;overflow:hidden;line-height:17.6px}.kint-rich .kint-popup-trigger:hover,.kint-rich .kint-access-path-trigger:hover,.kint-rich .kint-search-trigger:hover{color:#1d1e1e;background:#f8f8f8}.kint-rich dt.kint-parent>.kint-popup-trigger{line-height:19.2px}.kint-rich .kint-search-trigger{font-size:20px}.kint-rich input.kint-search{display:none;border:1px solid #d7d7d7;border-top-width:0;border-bottom-width:0;padding:4px;float:right !important;margin:-4px 0;color:#1d1e1e;background:#f8f8f8;height:24px;width:160px;position:relative;z-index:100}.kint-rich input.kint-search.kint-show{display:block}.kint-rich .kint-search-root ul.kint-tabs>li:not(.kint-search-match){background:#f8f8f8;opacity:0.5}.kint-rich .kint-search-root dl:not(.kint-search-match){opacity:0.5}.kint-rich .kint-search-root dl:not(.kint-search-match)>dt{background:#f8f8f8}.kint-rich .kint-search-root dl:not(.kint-search-match) dl,.kint-rich .kint-search-root dl:not(.kint-search-match) ul.kint-tabs>li:not(.kint-search-match){opacity:1}.kint-rich div.access-path{background:#f8f8f8;display:none;margin-top:5px;padding:4px;white-space:pre}.kint-rich div.access-path.kint-show{display:block}.kint-rich footer{padding:0 3px 3px;font-size:9px;background:transparent}.kint-rich footer>.kint-popup-trigger{background:transparent;color:#1d1e1e}.kint-rich footer nav{height:10px;width:10px;background-size:10px 50px}.kint-rich footer>ol{display:none;margin-left:32px}.kint-rich footer.kint-show>ol{display:block}.kint-rich a{color:#1d1e1e;text-shadow:none;text-decoration:underline}.kint-rich a:hover{color:#1d1e1e;border-bottom:1px dotted #1d1e1e}.kint-rich ul{list-style:none;padding-left:12px}.kint-rich ul:not(.kint-tabs) li{border-left:1px dashed #d7d7d7}.kint-rich ul:not(.kint-tabs) li>dl{border-left:none}.kint-rich ul.kint-tabs{margin:0 0 0 12px;padding-left:0;background:#f8f8f8;border:1px solid #d7d7d7;border-top:0}.kint-rich ul.kint-tabs>li{background:#f8f8f8;border:1px solid #d7d7d7;cursor:pointer;display:inline-block;height:24px;margin:2px;padding:0 12px;vertical-align:top}.kint-rich ul.kint-tabs>li:hover,.kint-rich ul.kint-tabs>li.kint-active-tab:hover{border-color:#aaa;color:red}.kint-rich ul.kint-tabs>li.kint-active-tab{background:#f8f8f8;border-top:0;margin-top:-1px;height:27px;line-height:24px}.kint-rich ul.kint-tabs>li:not(.kint-active-tab){line-height:20px}.kint-rich ul.kint-tabs li+li{margin-left:0}.kint-rich ul.kint-tab-contents>li{display:none}.kint-rich ul.kint-tab-contents>li.kint-show{display:block}.kint-rich dt:hover+dd>ul>li.kint-active-tab{border-color:#aaa;color:red}.kint-rich dt>.kint-color-preview{width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:10px;border:1px solid #d7d7d7;background-color:#ccc;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="%23FFF" d="M0 0h1v2h1V1H0z"/></svg>');background-size:100%}.kint-rich dt>.kint-color-preview:hover{border-color:#aaa}.kint-rich dt>.kint-color-preview>div{width:100%;height:100%}.kint-rich table{border-collapse:collapse;empty-cells:show;border-spacing:0}.kint-rich table *{font-size:12px}.kint-rich table dt{background:none;padding:2px}.kint-rich table dt .kint-parent{min-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kint-rich table td,.kint-rich table th{border:1px solid #d7d7d7;padding:2px;vertical-align:center}.kint-rich table th{cursor:alias}.kint-rich table td:first-child,.kint-rich table th{font-weight:bold;background:#f8f8f8;color:#1d1e1e}.kint-rich table td{background:#f8f8f8;white-space:pre}.kint-rich table td>dl{padding:0}.kint-rich table pre{border-top:0;border-right:0}.kint-rich table thead th:first-child{background:none;border:0}.kint-rich table tr:hover>td{box-shadow:0 0 1px 0 #aaa inset}.kint-rich table tr:hover var{color:red}.kint-rich table ul.kint-tabs li.kint-active-tab{height:20px;line-height:17px}.kint-rich pre.kint-source{margin-left:-1px}.kint-rich pre.kint-source[data-kint-filename]:before{display:block;content:attr(data-kint-filename);margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid #f8f8f8}.kint-rich pre.kint-source>div:before{display:inline-block;content:counter(kint-l);counter-increment:kint-l;border-right:1px solid #aaa;padding-right:8px;margin-right:8px}.kint-rich pre.kint-source>div.kint-highlight{background:#f8f8f8}.kint-rich .kint-microtime-lap{text-shadow:-1px 0 #aaa,0 1px #aaa,1px 0 #aaa,0 -1px #aaa;color:#f8f8f8;font-weight:bold}input.kint-note-input{width:100%}.kint-rich .kint-focused{box-shadow:0 0 3px 2px red}.kint-rich dt{font-weight:normal}.kint-rich dt.kint-parent{margin-top:4px}.kint-rich dl dl{margin-top:4px;padding-left:25px;border-left:none}.kint-rich>dl>dt{background:#f8f8f8}.kint-rich ul{margin:0;padding-left:0}.kint-rich ul:not(.kint-tabs)>li{border-left:0}.kint-rich ul.kint-tabs{background:#f8f8f8;border:1px solid #d7d7d7;border-width:0 1px 1px 1px;padding:4px 0 0 12px;margin-left:-1px;margin-top:-1px}.kint-rich ul.kint-tabs li,.kint-rich ul.kint-tabs li+li{margin:0 0 0 4px}.kint-rich ul.kint-tabs li{border-bottom-width:0;height:25px}.kint-rich ul.kint-tabs li:first-child{margin-left:0}.kint-rich ul.kint-tabs li.kint-active-tab{border-top:1px solid #d7d7d7;background:#fff;font-weight:bold;padding-top:0;border-bottom:1px solid #fff !important;margin-bottom:-1px}.kint-rich ul.kint-tabs li.kint-active-tab:hover{border-bottom:1px solid #fff}.kint-rich ul>li>pre{border:1px solid #d7d7d7}.kint-rich dt:hover+dd>ul{border-color:#aaa}.kint-rich pre{background:#fff;margin-top:4px;margin-left:25px}.kint-rich .kint-source{margin-left:-1px}.kint-rich .kint-source .kint-highlight{background:#cfc}.kint-rich .kint-parent.kint-show>.kint-search{border-bottom-width:1px}.kint-rich table td{background:#fff}.kint-rich table td>dl{padding:0;margin:0}.kint-rich table td>dl>dt.kint-parent{margin:0}.kint-rich table td:first-child,.kint-rich table td,.kint-rich table th{padding:2px 4px}.kint-rich table dd,.kint-rich table dt{background:#fff}.kint-rich table tr:hover>td{box-shadow:none;background:#cfc}
+</style>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/frontend/css/meanmenu.css">
+<link rel="stylesheet" href="assets/frontend/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/frontend/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/frontend/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/frontend/css/flaticon.css">
+<link rel="stylesheet" href="assets/frontend/css/remixicon.css">
+<link rel="stylesheet" href="assets/frontend/css/odometer.min.css">
+<link rel="stylesheet" href="assets/frontend/css/aos.css">
+<link rel="stylesheet" href="assets/frontend/css/style.css">
+<link rel="stylesheet" href="assets/frontend/css/dark.css">
+<link rel="stylesheet" href="assets/frontend/css/responsive.css">
+<link rel="icon" type="image/png" href="assets/frontend/images/favicon.png">
+<title>
+Apply Now</title>
+<link rel="stylesheet" type="text/css" href="assets/frontend/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../fonts.googleapis.com/css28049.html?family=Sabon+Next:wght@700&amp;display=swap">
+<script type="text/javascript"> var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="../widgets.in6.nopaperforms.com/emwgts.html"; document.body.appendChild(s); </script>
+</body>
+<style type="text/css">
+.req{color:#ddc4cd;}
+.error{color:#ddc4cd!important;}
+</style>
+</head>
+<body>
+    <script type="text/javascript">
+
+var npf_d='../apply.ltsu.ac.in/index.html';
+var npf_c='6433';
+var npf_m='1';
+var s=document.createElement("script");
+s.type="text/javascript";
+s.async=true;
+s.src="../track.nopaperforms.com/js/track.js";
+document.body.appendChild(s);
+</script>
+
+<div class="top-allply">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="top-text">
+          <h5>Applications are invited for Admission Enquiry for Session 2026-27</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact-us-area pt-100 pb-70" style="background-image: url(assets/frontend/images/aPPIC-1.html); background-size: cover; background-attachment: fixed;">
+  <div class="container">
+    <div class="entry-content">
+                     
+        
+      <div class="row justify-content-center  ">
+        <div class="col-lg-7 col-sm-7"><br><br><br>
+          <div class="logo-section"><a href="../ltsu.ac.in/index.html"><img src="assets/frontend/images/apply-form-logo.png"></a>
+            <h5>Welcome to LTSU  - Your one-stop platform for admission to LTSU's prestigious programs.</h5>
+            <img src="assets/frontend/images/appynow.json" alt="" width="350">
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-5">
+          <div class="background-ji">
+            <div class="row">
+              <div class=" col-md-12">
+                <div class="form-btn">
+                 <h3 style="color:#fff;">Apply Now</h3>
+                </div>
+              </div>
+              <div class=" col-md-9 "> </div>
+              <hr>
+              <div class=" col-md-12 ">
+<!--                <div class="contact-form">
+             <form action="https://www.ltsu.ac.in/apply-now" class="contact_form custom_form custom_form_home" id="" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_test_name" value="9d221b4f106d5d89ea0ff466348f48eb" />            <div class="row clearfix">
+                      <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                        <label> Full Name <span class="req">*</span></label>
+                         <input type="text" name="adm_name" value="" id="adm_name" maxlength="300" class="form-control" />
+                                    </div>
+                      </div>
+                       <div class="row clearfix">
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label> Enter Email Address <span class="req">*</span></label>
+                         <input type="text" name="adm_email" value="" id="adm_email" maxlength="400" class="form-control" />
+                                    </div> 
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label>Mobile Number <span class="req">*</span></label>
+                         <input type="text" name="adm_mobile" value="" id="adm_mobile" maxlength="10" class="form-control" />
+                                    </div>
+                      </div>
+                        <div class="row clearfix">
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label>State <span class="req">*</span></label>
+                        <div class="form-group">
+                         <select name="adm_state" class="form-select">
+                          <option value="">- Select  -</option>
+                                                    <option  value="1">Chandigarh</option>
+                                                     <option  value="2">Haryana</option>
+                                                     <option  value="3">Punjab</option>
+                                                     <option  value="4">Andaman and Nicobar Islands</option>
+                                                     <option  value="5">Assam</option>
+                                                     <option  value="6">Arunachal Pradesh</option>
+                                                     <option  value="7">Andhra Pradesh</option>
+                                                     <option  value="8">Dadra and Nagar Haveli</option>
+                                                     <option  value="9">Delhi</option>
+                                                     <option  value="10">Gujarat</option>
+                                                     <option  value="11">Goa</option>
+                                                     <option  value="12">Chhattisgarh</option>
+                                                     <option  value="13">Himachal Pradesh</option>
+                                                     <option  value="14">Jharkhand</option>
+                                                     <option  value="15">Jammu & Kashmir</option>
+                                                     <option  value="16">Karnataka</option>
+                                                     <option  value="17">Kerala</option>
+                                                     <option  value="18">Ladakh</option>
+                                                     <option  value="19">Lakshadweep</option>
+                                                     <option  value="20">Madhya Pradesh</option>
+                                                     <option  value="21">Maharashtra</option>
+                                                     <option  value="22">Manipur</option>
+                                                     <option  value="23">Meghalaya</option>
+                                                     <option  value="24">Mizoram</option>
+                                                     <option  value="25">Nagaland</option>
+                                                     <option  value="26">Odisha</option>
+                                                     <option  value="27">Bihar</option>
+                                                     <option  value="28">Puducherry</option>
+                                                     <option  value="29">Rajasthan</option>
+                                                     <option  value="30">Sikkim</option>
+                                                     <option  value="31">Tamil Nadu</option>
+                                                     <option  value="32">Telangana</option>
+                                                     <option  value="33">Tripura</option>
+                                                     <option  value="34">Uttarakhand</option>
+                                                     <option  value="35">Uttar Pradesh</option>
+                                                     <option  value="36">West Bengal</option>
+                            
+                        </select>
+                                                
+                        
+                          
+                        </div>
+                      </div> 
+					   <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label> City <span class="req">*</span></label>
+                         <input type="text" name="adm_city" value="" id="adm_city" maxlength="400" class="form-control" />
+                                    </div>
+                      </div>
+                        <div class="row clearfix">
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label>Gender <span class="req">*</span></label>
+                        <div class="form-group">
+                         <select name="adm_gender" class="form-select">
+                          <option value="">- Select  -</option>
+                          <option  value="Male">Male</option>
+                            <option  value="Female">Female</option>
+                              <option  value="Transgender">Transgender</option>
+                        </select>
+                                                 </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                        <label> Select Qualification Level <span class="req">*</span></label>
+                        <div class="form-group">
+                        	 <select name="adm_qualification" class="form-select">
+                          <option value="">- Select  -</option>
+                                                    <option  value="1">12th</option>
+                                                     <option  value="2">Diploma Engineering</option>
+                                                     <option  value="3">ITI</option>
+                                                     <option  value="4">Graduation</option>
+                                                     <option  value="5">Post Graduation</option>
+                                                     <option  value="8">B Pharma</option>
+                                                     <option  value="9">D Pharma</option>
+                                                     <option  value="10">Others</option>
+                            
+                        </select>
+                                                
+                         
+                        </div>
+                      </div>
+                      </div>
+                        <div class="row clearfix">
+                      <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                        <label> Course (Interested In)<span class="req">*</span></label>
+                         <select name="adm_course" class="form-select">
+                          <option value="">- Select  -</option>
+                                  <option  value="1">B.Tech CSE with IBM</option>
+                                  <option  value="55">Ph. D. in Pharmaceutical Sciences</option>
+                                  <option  value="56">Ph. D. in Allied Health Sciences</option>
+                                  <option  value="57">Ph. D. in Interfaith Studie</option>
+                                  <option  value="2">B.Tech CSE Pay After Placement</option>
+                                  <option  value="3">B.Tech EE  Pay After Placement</option>
+                                  <option  value="4">B.Tech ME  Pay After Placement</option>
+                                  <option  value="50">B. Tech Electronics Engineering</option>
+                                  <option  value="5">Diploma Engineering</option>
+                                  <option  value="6">Lateral Entry Diploma</option>
+                                  <option  value="7">B. Pharmacy</option>
+                                  <option  value="8">D. Pharmacy</option>
+                                  <option  value="9">M. Pharma</option>
+                                  <option  value="10">B. Pharma Practice</option>
+                                  <option  value="11">B. Sc Hotel Management</option>
+                                  <option  value="12">Diploma in Hotel Management</option>
+                                  <option  value="13">BBA  Pay After Placement</option>
+                                  <option  value="52">Bachelor of Hotel Management and Catering Technology</option>
+                                  <option  value="14">BCA  Pay After Placement </option>
+                                  <option  value="15">B. Com  Pay After Placement</option>
+                                  <option  value="25">Diploma in Radiology</option>
+                                  <option  value="16">BBA</option>
+                                  <option  value="24">DMLT</option>
+                                  <option  value="17">BCA</option>
+                                  <option  value="18">B. Com</option>
+                                  <option  value="19">MBA  Pay After Placement</option>
+                                  <option  value="20">MCA  Pay After Placement</option>
+                                  <option  value="21">MCA with Specializations</option>
+                                  <option  value="22">B.Com LLB</option>
+                                  <option  value="23">LLB</option>
+                                  <option  value="27">UG Certificate in Hotel Management</option>
+                                  <option  value="28">Bachelor of Arts (BA)</option>
+                                  <option  value="29">Bachelor of Physiotherapy</option>
+                                  <option  value="30">B.Sc Cardiovascular Technology</option>
+                                  <option  value="31">B.Sc Operation Theatre & Anaesthesia Technology</option>
+                                  <option  value="32">B.Sc  Dialysis Technology</option>
+                                  <option  value="33">B.Sc Radiology & Imaging Technology</option>
+                                  <option  value="34">B.Sc Medical Laboratory Technology</option>
+                                  <option  value="35">PGDCA</option>
+                                  <option  value="36">M.Sc Medical Laboratory Technology</option>
+                                  <option  value="37">M.Sc Radiology & Imaging Technology</option>
+                                  <option  value="38">M.Sc  Dialysis Technology</option>
+                                  <option  value="39">M.Sc Operation Theatre & Anaesthesia Technology</option>
+                                  <option  value="40">M.Sc Cardiovascular Technology</option>
+                                  <option  value="42">B. Tech in Electronics Engineering</option>
+                                  <option  value="41">Masters of Physiotherapy</option>
+                                  <option  value="43">B. Tech in Mechanical Engineering (for working professional)</option>
+                                  <option  value="44">B. Tech in Automobile Engineering(for working professional)</option>
+                                  <option  value="45">B. Tech in Electrical Engineering (for working professional)</option>
+                                  <option  value="47">B.A.LL.B (Hons.)	5 Years</option>
+                                  <option  value="48">B.Com.LL.B (Hons.)	5 Years</option>
+                                  <option  value="49">LL.B 3 Year</option>
+                                  <option  value="46">Diploma in Medical Laboratory Technology</option>
+                                  <option  value="51">MA</option>
+                                  <option  value="53">Bachelor of Physical Education and Sports</option>
+                                  <option  value="54">Master of Physical Education and Sports</option>
+                       
+                        </select>
+                        
+                            
+              
+                     
+                      </div>
+                      </div>
+                        <div class="row clearfix">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                        <button class="theme-btn btn-style-one" type="submit" name="submit">Submit</button>
+                      </div>
+                    </div>
+                </form>                </div>
+                -->
+<!-- Enquiry Form  START -->
+                <div class="npf_wgts" data-height="490px" data-w="4b42d6a13bc99813fd976ee3f6a33c98"></div>
+                <script type="text/javascript"> var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="../widgets.in6.nopaperforms.com/emwgts.html"; document.body.appendChild(s); </script>
+<!-- Enquiry Form  END -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!---   === -->
+
+
+
+
+<div class="page-contant"> 
+  <div class="container">
+<div class="row justify-content-center align-items-center" style="background: white;
+    padding: 8px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #dddddd;" >
+      <div class="col-lg-12" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true"> 
+    <div class="row justify-content-center  "> 
+
+      <div class="col-lg-5 col-md-5">
+        <div class="ph-img"> <img decoding="async" src="assets/frontend/images/LTSU-Set1.jpg" alt="Objectives" class="new-a"> 
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-md-7">
+        <div class="my-css table-responsive">  
+          <div class="our-misss three-1">
+            <H3>Scholarship Details</H3>
+          </div>
+            <ul class="swwwww" style="text-align: justify;"> 
+                <li><i class="fa fa-chevron-circle-right" aria-hidden="true" style="text-align: justify;"></i> <p>Scholarship Test Policy   <a href="assets/frontend/pdf/LTSU_Scholarship_Policy-SET2026.html" target="_blank"> Click Here..</a></li>
+                <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Scholarship test Registration.   <a href="../apply.ltsu.ac.in/scholarship-exam.html" target="_blank"> Click Here..</a></li> 
+                  <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Tech. Exam Registration<a href="../docs.google.com/forms/d/1W-_O227qzZVHZY6qDpEqLbKD7cvukhg87gfBsZIY_8A/viewform0ba3.html?pli=1&amp;pli=1&amp;edit_requested=true" target="_blank"> Click Here..</a></li> 
+
+            </ul>
+        </div>
+      </div>
+
+
+    </div>  
+    </div> 
+</div> 
+</div> 
+</div>
+
+
+
+<!---   === -->
+
+
+
+
+<!-- INTERNATIONAL ADMISSIOn PANEL START -->
+<div class="my--about" style="padding-bottom: 30px; padding-top: 25px;">
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="background:white  ;
+    padding: 8px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #dddddd;">
+
+      <div class="col-lg-12" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true">
+        <div class="campus-content three-1">
+          <div class="campus-title  aboutt jkl ">
+            <div class="campus-content three-1">
+              <div class="campus-title  aboutt jkl text-center" style="float: inline-end; padding: 15px;margin: 19px; "> <img src="assets/frontend/images/international.jpg"> </div>
+            </div>
+
+        <div class="contact-and-address">
+          <h2>International Admissions</h2>
+          <ul class="contactus-11">
+
+           <li><i class="fa fa-user" aria-hidden="true"></i> <a href="tel:+917508813555">+91 75088 13555</a><br>
+               <a href="tel:+919056707163">+91 90567 07163</a></li> 
+
+
+
+            <li><i class="fa fa-envelope-o"></i><a href="mailto:int.admissions@ltsu.ac.in">int.admissions@ltsu.ac.in</a><br><a href="mailto:info@globalpasscareer.com">info@globalpasscareer.com</a></li>
+
+           <!-- <li><i class="fa fa-globe"></i><a href="https://ltsu.ac.in/">www.ltsu.ac.in</a></li> -->
+          </ul>
+
+
+
+              <div class="my-bt">
+                <div class="abouttt"> <a target="_blank" href="https://www.globalpasscareer.com/apply/lamrin" class="default-btn btn">Apply Now<i class="flaticon-next"></i></a> </div>
+              </div>
+
+
+        </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERNATIONAL ADMISSIOn PANEL END -->
+
+
+
+
+<div class="campus-information-area pt-60 pb-50 welcome-mobile" style="background-image: url(assets/frontend/images/bg--1001.html); background-size: cover; background-attachment: fixed;">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+
+      <div class="col-lg-5" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true">
+        <div class="campus-content three-1">
+      <!--    <div class="campus-title  aboutt jkl text-center"> <img src="https://www.ltsu.ac.in/assets/frontend/images/prog-70.png"></div> -->
+          <img src="assets/frontend/images/prog-70.png">
+        </div>
+      </div>
+
+
+      <div class="col-lg-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300" data-aos-once="true">
+
+
+
+
+
+
+<!---   === -->
+<div class="accordion accordion-flush" id="accordionFlushExample" style="padding-top: 14px;padding-bottom: 50px;">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        University School of Engineering & Technology 
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><p>
+         <div class="my-css table-responsive">  
+             <ul class="swwwww">
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p> B.Tech CSE IBM -Artificial Intelligence & Machine Learning </p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Tech CSE IBM -Cyber Security</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B.Tech CSE IBM -Data Science</p> </li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B.Tech CSE IBM -Internet of Things</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B.Tech CSE Core</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B.Tech Mechanical Engineering L&T Edutech - Digital Manufacturing using AI & CPS</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B.Tech Electrical Engineering L&T Edutech - Smart & Sustainable Power Engineering</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B. Tech in Electronics Engineering L&T Edutech - VLSI Design and Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B. Tech in Mechanical Engineering (For Working Professional)</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B. Tech in Automobile Engineering (For Working Professional)</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>B. Tech Civil Engineering</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><p>M. Tech Civil Engineering</p></li>
+             </ul>
+              <a class="registration" href="university-school-of-engineering.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          University School of Commerce & Management     
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Digital Marketing</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration)- Sales & Marketing</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Banking</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Finance and Capital Market</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Logistics</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Retail</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) - Human Resources</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BBA (Bachelor of Business Administration) Regular</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BCA (Bachelor of Computer Application) Regular</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BCA (Bachelor of Computer Application) - Full Stack  Web/Mobile Development </p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BCA (Bachelor of Computer Application) - Cyber Security</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BCA (Bachelor of Computer Application) - Testing</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BCA (Bachelor of Computer Application) - Cloud Computing</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B. Com (Bachelor of Commerce) Regular</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B. Com (Bachelor of Commerce) - Digital Accounts & Finance</p></li>
+             <li><b><h5>Post Graduate Courses</h5></b></li> 
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MCA (Master of Computer Application) -Full Stack  Web/Mobile Development</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MCA (Master of Computer Application) - Cloud Computing</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MCA (Master of Computer Application) - Cyber Security</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MCA (Master of Computer Application) - Testing</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Com (Master of Commerce)</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Digital Marketing</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Sales & Marketing</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Banking</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Finance & Capital Market</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Logistics</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Human Resources</p></li>
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MBA (Masters in Business Administration) - Retail</p></li>
+             <li><b><h5>Diploma Courses</h5></b></li> 
+             <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>PGDCA (Post Graduate Diploma in Computer Applications)</p></li>
+            </ul>
+              <a class="registration" href="university-school-of-commerce-management.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>   
+         </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+       University School of Polytechnic
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Diploma Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Computer Science & Engineering</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Electrical Engineering</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Mechanical Engineering</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Computer Science & Engineering (Lateral Entry)</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Electrical Engineering (Lateral Entry)</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Mechanical Engineering (Lateral Entry)</p></li>
+            </ul>
+              <a class="registration" href="university-school-of-polytechnic.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>      
+       </div>
+    </div>
+  </div>
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+       Institute of Pharmacy
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Bachelor of Pharmacy (B. Pharma)</p></li>
+              <li><b><h5>Post Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Master of Pharmacy (M. Pharma) - Pharmaceutics</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Master of Pharmacy (M. Pharma) - Pharmaceutical Chemistry</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Master of Pharmacy (M. Pharma) - Pharmacology</p></li>
+              <li><b><h5>Diploma Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Pharmacy (D. Pharma)</p></li>
+            </ul>
+              <a class="registration" href="institute-of-pharmacy.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>      
+       </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+       University School of Hotel & Tourism Management
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B. Sc. in Hotel Management</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Bachelor of Hotel Management and Catering Technology</p></li>
+              <li><b><h5>Diploma Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma in Hotel Management</p></li>
+            </ul>
+              <a class="registration" href="university-school-of-hotel-tourism-management.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>   
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+       University School of Allied Health Sciences
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graduate Courses</h5></b></li>              
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Sc Medical Laboratory Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Sc Radiology & Imaging Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Sc Dialysis Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Sc Operation Theatre & Anaesthesia Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>B.Sc Cardiovascular Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Bachelor of Physiotherapy</p></li>
+              <li><b><h5>Post Graduate Courses</h5></b></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Sc Medical Laboratory Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Sc Radiology & Imaging Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Sc Dialysis Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Sc Operation Theatre & Anaesthesia Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>M.Sc Cardiovascular Technology</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Masters of Physiotherapy</p></li>
+              <li><b><h5>Diploma Courses</h5></b></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Diploma Medical Laboratory Technology (DMLT)</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Medical Radiology & Imaging Terapeutic Technology</p></li>
+
+            </ul>
+              <a class="registration" href="university-school-of-allied-health-sciences.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>   
+       </div>
+    </div>
+  </div>
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+       University School of Sports & Physical Education
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graguate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Bachelor of Arts</p></li>
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Bachelor of Physical Education and Sports</p></li>
+              <li><b><h5>Post Graguate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>Master of Physical Education and Sports</p></li>
+            </ul>
+              <a class="registration" href="university-school-of-sports-physical-education.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Click for More Information</a>      
+       </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive1" aria-expanded="false" aria-controls="flush-collapseFive1">
+       University School of Media and Mass Communication
+      </button>
+    </h2>
+    <div id="flush-collapseFive1" class="accordion-collapse collapse" aria-labelledby="flush-headingFive1" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+             <ul class="swwwww">
+              <li><b><h5>Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>BA</p></li>
+              <li><b><h5>Post Graduate Courses</h5></b></li> 
+              <li><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> <p>MA</p></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--  -----  -->
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="podcasts-area pt-100 pb-70 "   style="background-image: url(assets/frontend/images/map1111.png); background-size:cover; background-attachment: fixed;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title style2 text-center">
+          <h2>INTERNATIONAL</h2>
+          <p> <strong>Collaborations that Pave the Way to an Extraordinary Global Career </strong> </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true">
+            <div class="interrr jjj text-center">
+              <p>Lamrin's collaboration with Globally Recognised Universities shall help train students under the finest mentors, alongside its own accomplished faculty. Guided and tutored by expert academicians and experienced professionals in international standards of technology, our overseas collaborations are designed in a way that ensures an all-around development of our students that captures the best of both worlds.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="events-slider11 owl-carousel owl-theme">
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international1.html"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international2.html"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international3.html"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international4.jpg"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international5.html"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international6.html"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international7.jpg"> </div>
+          </div>
+          <div class="single-events-card style-3 mlr-5">
+            <div class="events-image jklll text-center"> <img src="assets/frontend/images/international8.jpg"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="assets/frontend/js/jquery.min.html"></script> 
+<script src="assets/frontend/js/bootstrap.bundle.min.html"></script> 
+<script src="assets/frontend/js/jquery.meanmenu.html"></script> 
+<script src="assets/frontend/js/owl.carousel.min.html"></script> 
+<script src="assets/frontend/js/carousel-thumbs.min.html"></script> 
+<script src="assets/frontend/js/jquery.magnific-popup.html"></script> 
+<script src="assets/frontend/js/aos.html"></script> 
+<script src="assets/frontend/js/odometer.min.html"></script> 
+<script src="assets/frontend/js/appear.min.html"></script> 
+<script src="assets/frontend/js/form-validator.min.js"></script> 
+<script src="assets/frontend/js/contact-form-script.js"></script> 
+<script src="assets/frontend/js/ajaxchimp.min.html"></script> 
+<script src="assets/frontend/js/custom.html"></script>
+</body>
+
+<!-- Mirrored from www.ltsu.ac.in/apply-now by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2026 13:40:15 GMT -->
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH/Views/frontend/apply-now.php -->
